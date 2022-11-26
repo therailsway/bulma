@@ -7,11 +7,11 @@
           <th style="width: 20%;">
             {{ breakpoint.name }}<br>
             {% if breakpoint.id == 'mobile' %}
-              Up to <code>{{ breakpoint.to }}px</code>
+              上限到 <code>{{ breakpoint.to }}px</code>
             {% elsif breakpoint.id == 'fullhd' %}
-              <code>{{ breakpoint.from }}px</code> and above
+              <code>{{ breakpoint.from }}px</code> 及以上
             {% else %}
-              Between <code>{{ breakpoint.from }}px</code> and <code>{{ breakpoint.to }}px</code>
+              在 <code>{{ breakpoint.from }}px</code> 到 <code>{{ breakpoint.to }}px</code> 之间
             {% endif %}
           </th>
         {% endfor %}
@@ -20,7 +20,7 @@
     <tbody>
       <tr>
         <td>
-          <p class="notification is-primary">mobile</p>
+          <p class="notification is-primary">移动设备</p>
         </td>
         <td colspan="4">
           <p class="notification">-</p>
@@ -31,7 +31,7 @@
           <p class="notification">-</p>
         </td>
         <td colspan="4">
-          <p class="notification is-primary">tablet</p>
+          <p class="notification is-primary">平板</p>
         </td>
       </tr>
       <tr>
@@ -39,7 +39,7 @@
           <p class="notification">-</p>
         </td>
         <td colspan="3">
-          <p class="notification is-primary">desktop</p>
+          <p class="notification is-primary">桌面系统</p>
         </td>
       </tr>
       <tr>
@@ -47,7 +47,7 @@
           <p class="notification">-</p>
         </td>
         <td colspan="2">
-          <p class="notification is-primary">widescreen</p>
+          <p class="notification is-primary">宽屏</p>
         </td>
       </tr>
       <tr>
@@ -55,7 +55,7 @@
           <p class="notification">-</p>
         </td>
         <td>
-          <p class="notification is-primary">fullhd</p>
+          <p class="notification is-primary">巨屏</p>
         </td>
       </tr>
       <tr>
@@ -63,7 +63,7 @@
           <p class="notification">-</p>
         </td>
         <td>
-          <p class="notification is-primary">tablet-only</p>
+          <p class="notification is-primary">仅平板</p>
         </td>
         <td colspan="3">
           <p class="notification">-</p>
@@ -74,7 +74,7 @@
           <p class="notification">-</p>
         </td>
         <td>
-          <p class="notification is-primary">desktop-only</p>
+          <p class="notification is-primary">仅桌面</p>
         </td>
         <td colspan="2">
           <p class="notification">-</p>
@@ -85,7 +85,7 @@
           <p class="notification">-</p>
         </td>
         <td>
-          <p class="notification is-primary">widescreen-only</p>
+          <p class="notification is-primary">仅宽屏</p>
         </td>
         <td>
           <p class="notification">-</p>
@@ -93,7 +93,7 @@
       </tr>
       <tr>
         <td colspan="2">
-          <p class="notification is-primary">touch</p>
+          <p class="notification is-primary">触屏</p>
         </td>
         <td colspan="3">
           <p class="notification">-</p>
@@ -101,7 +101,7 @@
       </tr>
       <tr>
         <td colspan="3">
-          <p class="notification is-primary">until-widescreen</p>
+          <p class="notification is-primary">宽屏以下</p>
         </td>
         <td colspan="2">
           <p class="notification">-</p>
@@ -109,7 +109,7 @@
       </tr>
       <tr>
         <td colspan="4">
-          <p class="notification is-primary">until-fullhd</p>
+          <p class="notification is-primary">巨屏以下</p>
         </td>
         <td colspan="1">
           <p class="notification">-</p>

@@ -1,5 +1,5 @@
 ---
-title: Columns responsiveness
+title: 自适应列
 layout: documentation
 doc-tab: columns
 doc-subtab: responsiveness
@@ -44,13 +44,13 @@ breadcrumb:
 </div>
 {% endcapture %}
 
-{% include elements/anchor.html name="Mobile columns" %}
+{% include elements/anchor.html name="移动设备列" %}
 
 <div class="content">
   <p>
-    By default, columns are only activated from <strong>tablet</strong> onwards. This means columns are stacked on top of each other on <strong>mobile</strong>.
+    默认情况下，平铺列只会出现在 <strong>平板（tablet）</strong>及大于平板的设备上。这就是说在<strong>移动设备上</strong>，列只会从上到下的堆叠。
     <br>
-    If you want columns to work on <strong>mobile too</strong>, just add the <code>is-mobile</code> modifier on the <code>columns</code> container:
+    如果您想让列<strong>也在移动设备上</strong>平铺，只需在容器<code>columns</code>上添加修饰符 <code>is-mobile</code> 即可：
   </p>
 </div>
 
@@ -73,16 +73,16 @@ breadcrumb:
 
 <div class="message is-info">
   <p class="message-header">
-    Resize
+    重置大小
   </p>
   <p class="message-body">
-    If you want to see the difference, resize your browser and see <em>when</em> the columns are stacked and when they are horizontally distributed.
+    如果您想要看到不同显示，您可以重新调整您的浏览器窗口的大小，就会看到<em>什么时候</em>列堆叠和什么时候列平铺。
   </p>
 </div>
 
 <div class="content">
   <p>
-    If you <em>only</em> want columns on <strong>desktop</strong> upwards, just use the <code>is-desktop</code> modifier on the <code>columns</code> container:
+    如果您<em>只</em>想要列在<strong>桌面电脑</strong>及以上大屏设备上使用，只需在容器 <code>columns</code> 上添加修饰符 <code>is-desktop</code> 即可：
   </p>
 </div>
 
@@ -103,10 +103,10 @@ breadcrumb:
 
 {% highlight html %}{{ columns_desktop }}{% endhighlight %}
 
-{% include elements/anchor.html name="Different column sizes per breakpoint" %}
+{% include elements/anchor.html name="每种断点的不同列宽" %}
 
 <div class="content">
-  <p>You can define a <strong>column size</strong> for <em>each</em> viewport size: mobile, tablet, and desktop.</p>
+  <p>您可以为<em>每一种</em> viewport 定义 <strong>列宽</strong>：移动设备、平板和桌面系统。</p>
 </div>
 
 <div class="columns is-mobile">
@@ -134,8 +134,8 @@ breadcrumb:
 </div>
 
 <div class="message is-info">
-  <p class="message-header">Resize</p>
-  <p class="message-body">If you want to see these classes in action, resize your browser window and see how the same column varies in width at each breakpoint.</p>
+  <p class="message-header">调整大小</p>
+  <p class="message-body">如果您想看到这些类的表现，调整您的浏览器窗口的大小，就会看到同样的列在不同断点条件下的变化。</p>
 </div>
 
 {% highlight html %}{{ columns_multiple_breakpoints }}{% endhighlight %}

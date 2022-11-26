@@ -1,5 +1,5 @@
 ---
-title: Column sizes
+title: 列的宽度（Size）
 layout: documentation
 doc-tab: columns
 doc-subtab: sizes
@@ -102,7 +102,7 @@ breadcrumb:
 {% endcapture %}
 
 <div class="content">
-  <p>If you want to change the <strong>size</strong> of a single column, you can use one of the following classes:</p>
+  <p>如果您想要改变单个列的 <strong>宽度</strong>，可以使用下面类之一：</p>
   <ul>
     <li>
       <code>is-three-quarters</code>
@@ -123,11 +123,11 @@ breadcrumb:
       <code>is-full</code>
     </li>
   </ul>
-  <p>The <em>other</em> columns will fill up the <strong>remaining</strong> space automatically.</p>
+  <p><em>其他</em>列会自动补全<strong>剩余</strong>空间。</p>
 </div>
 
 <div class="content">
-  <p>You can now use the following multiples of <code>20%</code> as well:</p>
+  <p>您也可以使用下面 <code>20%</code> 的倍数：</p>
   <ul>
     <li>
       <code>is-four-fifths</code>
@@ -282,10 +282,10 @@ breadcrumb:
   {% highlight html %}{{ columns_sizes }}{% endhighlight %}
 </div>
 
-{% include elements/anchor.html name="12 columns system" %}
+{% include elements/anchor.html name="12 列系统" %}
 
 <div class="content">
-  <p>As the grid can be divided into <strong>12</strong> columns, there are size classes for each division:</p>
+  <p>当宽度被平均分为 <strong>12</strong> 列的时候，不同的宽度使用独有的宽度类：</p>
   <ul>
     <li><code>is-1</code></li>
     <li><code>is-2</code></li>
@@ -303,8 +303,8 @@ breadcrumb:
 </div>
 
 <div class="message is-info">
-  <p class="message-header">Naming convention</p>
-  <p class="message-body">Each modifier class is named after <strong>how many columns you want out of 12</strong>. So if you want 7 columns out of 12, use <code>is-7</code>.</p>
+  <p class="message-header">命名约定</p>
+  <p class="message-body">每个修饰符类都是以<strong>您需要 12 列中多少列</strong>的方式命名。所以如果您需要 12 列中的 7 列的宽度，就用 <code>is-7</code>。</p>
 </div>
 <div class="columns">
   <div class="column is-1">
@@ -565,11 +565,11 @@ breadcrumb:
   </div>
 </div>
 
-{% include elements/anchor.html name="Offset" %}
+{% include elements/anchor.html name="偏移（Offset）" %}
 
 <div class="content">
   <p>
-    While you can use <em>empty columns</em> (like <code>&lt;div class="column"&gt;&lt;/div&gt;</code>) to create horizontal space around <code>.column</code> elements, you can also use <strong>offset</strong> modifiers like <code>.is-offset-x</code>:
+    您可以利用 <code>.column</code>元素通过<em>空列</em>（如 <code>&lt;div class="column"&gt;&lt;/div&gt;</code>）创建横向空间，也可以使用 <strong>offset</strong> 修饰符，像这样 <code>.is-offset-x</code>实现：
   </p>
 </div>
 
@@ -613,10 +613,10 @@ breadcrumb:
   {% highlight html %}{{ columns_offset }}{% endhighlight %}
 </div>
 
-{% include elements/anchor.html name="Narrow column" %}
+{% include elements/anchor.html name="窄列" %}
 
 <div class="content">
-  <p>If you want a column to only take the <strong>space it needs</strong>, use the <code>is-narrow</code> modifier. The other column(s) will fill up the remaining space.</p>
+  <p>如果您想让一个列只占<strong>其所需空间</strong>，可以使用 <code>is-narrow</code> 修饰符，则其他列会占满剩余空间。</p>
 </div>
 
 <div class="columns">
@@ -639,7 +639,7 @@ breadcrumb:
 </div>
 
 <div class="content">
-  <p>As for the size modifiers, you can have narrow columns for different <strong>breakpoints</strong>:</p>
+  <p>至于宽度修饰符，您可以为不同的<strong>断点</strong>添加窄列功能：</p>
   <ul>
     <li>
       <code>.is-narrow-mobile</code>

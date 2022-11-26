@@ -1,5 +1,5 @@
 ---
-fulltitle: Love for Bulma 😍
+fulltitle: Bulma 之爱 😍
 layout: default
 route: love
 breadcrumb:
@@ -22,8 +22,8 @@ tweets:
   include components/hero.html
   color="love"
   icon="fas fa-heart"
-  title="**Love** for Bulma"
-  subtitle="Happy thoughts from all around the world"
+  title="Bulma 之**爱**"
+  subtitle="来自世界各地的欢乐想法"
 %}
 
 {% assign encoded_url = site.data.meta.title | urlencode %}
@@ -41,7 +41,7 @@ tweets:
 {%
   include components/call.html
   color="twitter"
-  text='Are you a Bulma fan too? <strong>Show your support!</strong> <span style="font-size: 20px; margin-left: 2px; position: relative; top: 1px;">🤗</span>'
+  text='您也是 Bulma 的粉丝吗？<strong>秀出您的爱！</strong> <span style="font-size: 20px; margin-left: 2px; position: relative; top: 1px;">🤗</span>'
   button=call_button
 %}
 
@@ -77,9 +77,9 @@ tweets:
 
 <nav id="bd-pills" class="bd-pills">
   <div class="bd-pills-body">
-    <span class="bd-pill-label">Sort by</span>
-    <button class="bd-pill-button is-active" onclick="sortTweets('id')">Date</button>
-    <button class="bd-pill-button" onclick="sortTweets('likes')">Likes</button>
+    <span class="bd-pill-label">排序根据</span>
+    <button class="bd-pill-button is-active" onclick="sortTweets('id')">日期</button>
+    <button class="bd-pill-button" onclick="sortTweets('likes')">喜欢度</button>
   </div>
 </nav>
 

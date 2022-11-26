@@ -1,6 +1,6 @@
 {
-  "title": "Bulma: Free, open source, and modern CSS framework based on Flexbox",
-  "description": "Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.",
+  "title": "Bulma：自由、开源和现代的基于 Flexbox 构建的 CSS 框架",
+  "description": "Bulma 是一款自由、开源的基于 FlexBox 和 Sass 构建的 CSS 框架。它 100% 自适应、模块化和自由可用。",
   "documentation": "/documentation",
   "download": "https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip",
   "release_notes": "https://github.com/jgthms/bulma/releases/tag/0.9.4",

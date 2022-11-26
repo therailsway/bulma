@@ -1,5 +1,5 @@
 ---
-title: Progress Bar
+title: 进度条
 layout: documentation
 doc-tab: elements
 doc-subtab: progress
@@ -27,17 +27,17 @@ meta:
 
 <div class="content">
   <p>
-    The Bulma progress bar is a simple CSS class that styles the native <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank"><code>&lt;progress&gt;</code> HTML element</a>.
+    Bulma 进度条是一个简单的对原生的 HTML 元素 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank"><code>&lt;progress&gt;</code> 进行了美化的 CSS 类</a>.
   </p>
 </div>
 
 {% include elements/snippet.html content=progress %}
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    The progress bar element is available in all the <strong>different colors</strong> defined by the <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a>.
+    进度条元素提供所有 <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a> 中定义的各种<strong>不同的颜色</strong>。
   </p>
 </div>
 
@@ -49,7 +49,7 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 {% for size in site.data.sizes %}
 {% capture foobar %}
@@ -59,11 +59,11 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Indeterminate" %}
+{% include elements/anchor.html name="不定值" %}
 
 <div class="content">
   <p>
-    If you don't set the HTML <code>value</code> attribute, you can display an <strong>indeterminate</strong> progress bar. It's used to show that some progress is going on, but the total duration is not yet determined.
+    如果您没有设定 HTML 的 <code>value</code> 属性，就会看到一个处于 <strong>不定值</strong> 状态的进度条。这种状态常用于显示某些进行中但是总长度没确定时的状态。
   </p>
 </div>
 

@@ -6,11 +6,11 @@
   <div class="columns">
     <div class="column is-3">
       <p class="bd-footer-link-title">
-        <a href="{{ site.url }}">Home</a>
+        <a href="{{ site.url }}">首页</a>
       </p>
 
       <p class="bd-footer-link-title">
-        <a href="{{ site.url }}{{ blog_link.path }}">Blog</a>
+        <a href="{{ site.url }}{{ blog_link.path }}">网志</a>
       </p>
 
       {% for post in site.posts | limit: 4 %}
@@ -23,14 +23,14 @@
 
       <p class="bd-footer-link bd-is-more">
         <a href="{{ site.url }}{{ blog_link.path }}">
-          View all posts
+          查看所有文章
         </a>
       </p>
     </div>
 
     <div class="column is-3">
       <p class="bd-footer-link-title">
-        <a href="{{ site.url }}{{ documentation_link.path }}">Documentation</a>
+        <a href="{{ site.url }}{{ documentation_link.path }}">文档</a>
       </p>
 
       {% for category in site.data.links.categories %}
@@ -47,7 +47,7 @@
 
     <div class="column is-6">
       <p class="bd-footer-link-title">
-        <a href="{{ site.url }}{{ more_link.path }}">More</a>
+        <a href="{{ site.url }}{{ more_link.path }}">更多</a>
       </p>
 
       {% assign link = site.data.links.by_id['expo'] %}

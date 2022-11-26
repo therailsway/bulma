@@ -1,5 +1,5 @@
 ---
-title: Image
+title: 图像
 layout: documentation
 doc-tab: elements
 doc-subtab: image
@@ -47,15 +47,15 @@ meta:
 {% endcapture %}
 
 <div class="content">
-  <p>Because images can take a few seconds to load (or not at all), use the <code>image</code> container to specify a <strong>precisely sized</strong> container so that your layout isn't broken because of image loading or image errors.</p>
+  <p>由于图像加载需要一点儿时间（有时可以忽略不计），使用 <code>image</code> 容器规划一个<strong>精准大小</strong>的空间将保证您的页面布局因为图像加载慢或者图像出现错误而崩溃。</p>
 </div>
 
 {% include elements/snippet.html content=image %}
 
-{% include elements/anchor.html name="Fixed square images" %}
+{% include elements/anchor.html name="固定方形图像" %}
 
 <div class="content">
-  <p>There are <strong>7</strong> dimensions to choose from, useful for <strong>avatars</strong>:</p>
+  <p>这有用于 <strong>avatar</strong> 的 <strong>7</strong> 可选择的不同尺寸图像:</p>
 </div>
 
 <table class="table is-bordered">
@@ -72,26 +72,26 @@ meta:
   </tbody>
 </table>
 
-{% include elements/anchor.html name="Rounded images" %}
+{% include elements/anchor.html name="圆角图像" %}
 
 <div class="content">
-  <p>You can also make rounded images, using <code>is-rounded</code> class:</p>
+  <p>您可以用 <code>is-rounded</code> 类使图像变圆角：</p>
 </div>
 
 {% include elements/snippet.html content=rounded_image %}
 
-{% include elements/anchor.html name="Retina images" %}
+{% include elements/anchor.html name="Retina 图像" %}
 
 <div class="content">
-  <p>Because the image is fixed in size, you can use an image that is <strong>four times as big</strong>. So for example, in a <code>128x128</code> container, you can use a <code>256x256</code> image, but resized to <strong>128x128</strong> pixels.</p>
+  <p>由于 image 容器的大小是固定的，但是您可以使用一个<strong>大四倍</strong>的图像。例如，在一个 <code>128x128</code> 大小的容器内，您可以用一个 <code>256x256</code> 大小的图像，只不过需要重置大小为 <strong>128x128</strong> 像素。</p>
 </div>
 
 {% include elements/snippet.html content=retina_image %}
 
-{% include elements/anchor.html name="Responsive images with ratios" %}
+{% include elements/anchor.html name="按比例自适应图像" %}
 
 <div class="content">
-  <p>If you don't know the exact dimensions but know the <strong>ratio</strong> instead, you can use one of the <strong>16 ratio modifiers</strong>, which include <a href="https://en.wikipedia.org/wiki/Aspect_ratio_%28image%29#Still_photography">common aspect ratios in still photography</a>:</p>
+  <p>如果您不知道精确的面积但知道<strong>比例（ratio）</strong>，您可以用 <strong>16 种比例修饰符</strong>之一（包含了<a href="https://en.wikipedia.org/wiki/Aspect_ratio_%28image%29#Still_photography">静态照片的常用比例</a>）来表示：</p>
 </div>
 
 <table id="images" class="table is-bordered">
@@ -99,7 +99,7 @@ meta:
     <tr>
       <td><code>image is-square</code></td>
       <td style="width: 10rem;"><figure class="image is-square"><img src="{{site.url}}/images/placeholders/480x480.png"></figure></td>
-      <td>Square (or 1 by 1)</td>
+      <td>方形（或者 1 : 1)</td>
     </tr>
     <tr>
       <td><code>image is-1by1</code></td>
@@ -109,95 +109,95 @@ meta:
     <tr>
       <td><code>image is-5by4</code></td>
       <td style="width: 10rem;"><figure class="image is-5by4"><img src="{{site.url}}/images/placeholders/600x480.png"></figure></td>
-      <td>5 by 4</td>
+      <td>5 : 4</td>
     </tr>
     <tr>
       <td><code>image is-4by3</code></td>
       <td style="width: 10rem;"><figure class="image is-4by3"><img src="{{site.url}}/images/placeholders/640x480.png"></figure></td>
-      <td>4 by 3</td>
+      <td>4 : 3</td>
     </tr>
     <tr>
       <td><code>image is-3by2</code></td>
       <td style="width: 10rem;"><figure class="image is-3by2"><img src="{{site.url}}/images/placeholders/480x320.png"></figure></td>
-      <td>3 by 2</td>
+      <td>3 : 2</td>
     </tr>
     <tr>
       <td><code>image is-5by3</code></td>
       <td style="width: 10rem;"><figure class="image is-5by3"><img src="{{site.url}}/images/placeholders/800x480.png"></figure></td>
-      <td>5 by 3</td>
+      <td>5 : 3</td>
     </tr>
     <tr>
       <td><code>image is-16by9</code></td>
       <td style="width: 10rem;"><figure class="image is-16by9"><img src="{{site.url}}/images/placeholders/640x360.png"></figure></td>
-      <td>16 by 9</td>
+      <td>16 : 9</td>
     </tr>
     <tr>
       <td><code>image is-2by1</code></td>
       <td style="width: 10rem;"><figure class="image is-2by1"><img src="{{site.url}}/images/placeholders/640x320.png"></figure></td>
-      <td>2 by 1</td>
+      <td>2 : 1</td>
     </tr>
     <tr>
       <td><code>image is-3by1</code></td>
       <td style="width: 10rem;"><figure class="image is-3by1"><img src="{{site.url}}/images/placeholders/720x240.png"></figure></td>
-      <td>3 by 1</td>
+      <td>3 : 1</td>
   </tr>
     <tr>
       <td><code>image is-4by5</code></td>
       <td style="width: 10rem;"><figure class="image is-4by5"><img src="{{site.url}}/images/placeholders/480x600.png"></figure></td>
-      <td>4 by 5</td>
+      <td>4 : 5</td>
   </tr>
     <tr>
       <td><code>image is-3by4</code></td>
       <td style="width: 10rem;"><figure class="image is-3by4"><img src="{{site.url}}/images/placeholders/480x640.png"></figure></td>
-      <td>3 by 4</td>
+      <td>3 : 4</td>
   </tr>
   <tr>
       <td><code>image is-2by3</code></td>
       <td style="width: 10rem;"><figure class="image is-2by3"><img src="{{site.url}}/images/placeholders/320x480.png"></figure></td>
-      <td>2 by 3</td>
+      <td>2 : 3</td>
   </tr>
     <tr>
       <td><code>image is-3by5</code></td>
       <td style="width: 10rem;"><figure class="image is-3by5"><img src="{{site.url}}/images/placeholders/480x800.png"></figure></td>
-      <td>3 by 5</td>
+      <td>3 : 5</td>
     </tr>
   <tr>
       <td><code>image is-9by16</code></td>
       <td style="width: 10rem;"><figure class="image is-9by16"><img src="{{site.url}}/images/placeholders/360x640.png"></figure></td>
-      <td>9 by 16</td>
+      <td>9 : 16</td>
   </tr>
   <tr>
       <td><code>image is-1by2</code></td>
       <td style="width: 10rem;"><figure class="image is-1by2"><img src="{{site.url}}/images/placeholders/320x640.png"></figure></td>
-      <td>1 by 2</td>
+      <td>1 : 2</td>
   </tr>
   <tr>
     <td><code>image is-1by3</code></td>
     <td style="width: 10rem;"><figure class="image is-1by3"><img src="{{site.url}}/images/placeholders/240x720.png"></figure></td>
-    <td>1 by 3</td>
+    <td>1 : 3</td>
   </tr>
 </tbody>
 </table>
 
 <div class="content">
   <p>
-    The only <strong>requirement</strong> is for the parent element to already have a specific <strong>width</strong>.
+    唯一的<strong>要求</strong>就是父元素要指定<strong>宽度（width）</strong>。
   </p>
 </div>
 
 <div class="content">
-  <p>The <code>image</code> container will usually take up the <strong>whole width</strong> while maintaining the perfect ratio.
-  <br>If it doesn't, you can force it by appending the <code>is-fullwidth</code> modifier.</p>
+  <p><code>image</code> 容器通常会在保持漂亮比例的同时占位<strong>整个宽度</strong>。
+  <br>如果没有，您可以添加 <code>is-fullwidth</code> 修饰符强制其占位。</p>
 </div>
 
-{% include elements/anchor.html name="Arbitrary ratios with any element" %}
+{% include elements/anchor.html name="任意元素和任意比例" %}
 
 <div class="content">
   <p>
-    You can apply a specific <strong>ratio</strong> on <strong>any element</strong> other than an <code>img</code>, simply by applying the <code>has-ratio</code> modifier to a resizable element.
+    除了图像的 <code>img</code> 元素，您还可以为<strong>任意元素</strong>指定<strong>比例</strong>，也是应用 <code>has-ratio</code> 修饰符就可以重新指定元素的大小了。
   </p>
   <p>
-    For example, you can apply a <code>16by9</code> ratio on an <code>iframe</code>. Resize the browser, and you'll see how the ratio is maintained.
+    例如，您可以指定一个 <code>iframe</code> 为 <code>16by9</code> 比例。调整浏览器窗口，您就会看到比例效果。
   </p>
 </div>
 

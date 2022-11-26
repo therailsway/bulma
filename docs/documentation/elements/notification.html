@@ -1,5 +1,5 @@
 ---
-title: Notification
+title: 通知
 layout: documentation
 doc-tab: elements
 doc-subtab: notification
@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="content">
   <p>
-    The notification is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned notification in the corner of the viewport. That's why it supports the use of the <code>delete</code> element.
+    通知（Notification）是一种吸引用户注意的简单的颜色块。所以，通常用做固定于视口角落的通知。这就是为什么它支持使用 <code>delete</code> 元素。
   </p>
 </div>
 
 {% include elements/snippet.html content=notification %}
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    The notification element is available in all the <strong>different colors</strong> defined by the <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a>.
+    Notification 元素可用 <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a> 中定义的 <strong>各种颜色</strong>。
   </p>
 </div>
 
@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Light colors" %}
+{% include elements/anchor.html name="亮色" %}
 
 <div class="content">
-  Each color also comes in its <strong>light</strong> version. Simply append the <code>is-light</code> modifier to obtain the light version of the notification.
+  每种颜色都有它的<strong>亮色</strong>版本。只需添加 <code>is-light</code> 修饰符，该通知就应用了亮色版本。
 </div>
 
 {% for color in site.data.colors.justColors %}
@@ -85,11 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="JavaScript example" %}
+{% include elements/anchor.html name="JavaScript 示例" %}
 
 <div class="content">
   <p>
-    The Bulma package <strong>does not come with any JavaScript</strong>. Here is however an implementation example, which sets the <code>click</code> handler for Bulma <code>delete</code> elements, anywhere on the page, in vanilla JavaScript.
+    Bulma <strong>不包含任何 JavaScript</strong>。这是一个扩展示例，该示例为 Bulma 的 <code>delete</code> 元素设置了 <code>click</code> 操作，页面的任何地方将都处于 Vanilla JavaScript 的监控之下。
   </p>
 
   {% highlight html %}{{ notification_js_html }}{% endhighlight %}

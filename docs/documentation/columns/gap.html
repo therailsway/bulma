@@ -1,5 +1,5 @@
 ---
-title: Columns gap
+title: 列间隙
 layout: documentation
 doc-tab: columns
 doc-subtab: gap
@@ -107,23 +107,23 @@ breadcrumb:
 </div>
 {% endcapture %}
 
-{% include elements/anchor.html name="Default gap" %}
+{% include elements/anchor.html name="默认间隙" %}
 
 <div class="content">
   <p>
-    Each column has a <strong>gap</strong> equal to the <strong>variable</strong> <code>$column-gap</code>, which has a default value of <code>0.75rem</code>.
+    每一个列都有一个默认值为<code>0.75rem</code>的名为<code>$column-gap</code>的<strong>变量</strong><strong>间隙</strong>。
     <br>
-    Since the gap is on <em>each side</em> of a column, the gap between two adjacent columns will be twice the value of <code>$column-gap</code>, or <code>1.5rem</code> by default.
+    由于间隙在列的<em>每一面</em>都有，所以相邻的列的间隙值会是 <code>$column-gap</code> 的两倍，也就是默认为 <code>1.5rem</code>。
   </p>
 </div>
 
 {{ columns_default_gap }}
 
-{% include elements/anchor.html name="Gapless" %}
+{% include elements/anchor.html name="无间隙" %}
 
 <div class="content">
   <p>
-    If you want to remove the <strong>space</strong> between the columns, add the <code>is-gapless</code> modifier on the <code>columns</code> container:
+    如果您想删除两个列之间的<strong>空白</strong>，在容器 <code>columns</code> 上添加  <code>is-gapless</code> 修饰符即可：
   </p>
 </div>
 
@@ -147,7 +147,7 @@ breadcrumb:
 </div>
 
 <div class="content">
-  <p>You can combine it with the <code>is-multiline</code> modifier:</p>
+  <p>您还可以联合 <code>is-multiline</code> 修饰符使用：</p>
 </div>
 
 <div class="columns is-multiline is-mobile is-gapless">
@@ -184,7 +184,7 @@ breadcrumb:
   {% highlight html %}{{ columns_gapless_multiline }}{% endhighlight %}
 </div>
 
-{% include elements/anchor.html name="Variable gap" %}
+{% include elements/anchor.html name="可变间隙" %}
 
 <div class="field is-grouped is-grouped-multiline">
   <div class="control">
@@ -196,21 +196,21 @@ breadcrumb:
 
 <div class="content">
   <p>
-     You can specify a <strong>custom column gap</strong> by appending one of <strong>9 modifiers</strong> on the <code>.columns</code> container.
+     您可以通过在容器 <code>.columns</code> 上添加  <strong>9 个修饰符</strong> 之一来指定 <strong>定制列间隙</strong>。
   </p>
   <ul>
     <li>
-      <code>is-0</code> will remove any gap (similar to <code>is-gapless</code>)
+      <code>is-0</code> 会删除间隙（类似于 <code>is-gapless</code>）
     </li>
     <li>
-      <code>is-3</code> is the <strong>default value</strong>, equivalent to the <code>0.75rem</code> value
+      <code>is-3</code> 就是<strong>默认值</strong>，等于<code>0.75rem</code>
     </li>
     <li>
-      <code>is-8</code> is the maximum gap of <code>2rem</code>
+      <code>is-8</code> 是最大间隙值 <code>2rem</code>
     </li>
   </ul>
   <p>
-    Additionally, <code>.is-variable</code> should be added on the <code>.columns</code> container.
+    另外，<code>.is-variable</code> 应该添加到容器 <code>.columns</code> 上。
   </p>
 </div>
 
@@ -219,7 +219,7 @@ breadcrumb:
 <div class="message is-warning">
   <div class="message-body">
     <p>
-      This feature is only available in browsers that support <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS Variables</a>.
+      此功能仅限于支持 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS 变量</a>的浏览器。
     </p>
   </div>
 </div>
@@ -227,7 +227,7 @@ breadcrumb:
 <div class="message is-info">
   <div class="message-body">
     <p>
-      If your Sass setup doesn't support CSS Variables, you can <strong>disable this feature</strong> by setting <code>$variable-columns</code> to <code>false</code>.
+      如果您的 Sass 安装不支持 CSS 变量，您可以通过设置 <code>$variable-columns</code> 为 <code>false</code><strong>禁用此功能</strong>。
     </p>
   </div>
 </div>
@@ -236,14 +236,14 @@ breadcrumb:
 
 {% if vernum >= 72 %}
 
-{% include elements/anchor.html name="Breakpoint based column gaps" %}
+{% include elements/anchor.html name="基于列间隙的断点" %}
 
 <div class="content">
   <p>
-    You can define a column gap for each viewport size:
+    您可以为每个尺寸的视口（viewport）定义一个列间隙:
   </p>
 
-  <p>For example, here's how it looks with the following modifiers: <code>is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd</code></p>
+  <p>例如，这就是使用了下列修饰符后不同视口看起来不同的写法：<code>is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd</code></p>
 </div>
 
 <div class="bd-highlight-full">
@@ -274,7 +274,7 @@ breadcrumb:
 
 <div class="message is-info">
   <p class="message-body">
-    If you want to see the difference, resize your browser and see how the <strong>columns gap</strong> varies.
+    如果您想要看到不同，调整浏览器窗口的大小就会看到不同<strong>列间隙</strong>变量的作用。
   </p>
 </div>
 

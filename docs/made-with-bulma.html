@@ -1,5 +1,5 @@
 ---
-fulltitle: Made with Bulma badges
+fulltitle: Bulma 制造的徽章
 layout: default
 route: made-with-bulma
 breadcrumb:
@@ -7,28 +7,28 @@ breadcrumb:
 - more
 - made-with-bulma
 images:
-- name: "Default"
-  description: "White boxed"
+- name: "默认"
+  description: "白底"
   type: ""
   bg: "#fff"
-- name: "Dark"
-  description: "Dark boxed"
+- name: "暗色"
+  description: "暗色"
   type: "--dark"
   bg: "#000"
-- name: "Semi white"
-  description: "Transparent white and turquoise"
+- name: "半白"
+  description: "透明白和绿松石"
   type: "--semiwhite"
   bg: "url(/images/various/tom-levold-260373.jpg) center center/cover no-repeat"
-- name: "White"
-  description: "Transparent white"
+- name: "白"
+  description: "透明白"
   type: "--white"
   bg: "url(/images/various/sven-scheuermeier-34477.jpg) center center/cover no-repeat"
-- name: "Semiblack"
-  description: "Transparent black and turquoise"
+- name: "半黑"
+  description: "透明黑和绿松石"
   type: "--semiblack"
   bg: "url(/images/various/rodion-kutsaev-24833.jpg) center top/cover no-repeat"
-- name: "Black"
-  description: "Transparent black"
+- name: "黑"
+  description: "透明黑"
   type: "--black"
   bg: "url(/images/various/dmitri-popov-265077.jpg) center center/cover no-repeat"
 ---
@@ -39,8 +39,8 @@ images:
   include components/hero.html
   color="expo"
   icon="fas fa-certificate"
-  title="**Made** with Bulma badges"
-  subtitle="The official community badge"
+  title="**Bulma制造**徽章"
+  subtitle="官方社区推荐徽章"
 %}
 
 {% capture image_example %}
@@ -67,7 +67,7 @@ images:
   <div class="container">
     <div class="content">
       <p>
-        The <code>Made with Bulma</code> badge is available in <strong>6 different</strong> versions:
+        <code>Bulma 制造</code>徽章有 <strong>6 种不同</strong> 样式：
       </p>
     </div>
 
@@ -75,10 +75,10 @@ images:
       <table class="table is-bordered bd-mwb-table">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Preview</th>
-            <th>Description</th>
-            <th>Download</th>
+            <th>类型</th>
+            <th>预览</th>
+            <th>简介</th>
+            <th>下载</th>
           </tr>
         </thead>
         <tbody>
@@ -89,24 +89,24 @@ images:
               <td style="background: {{ image.bg }};"><img src="{{ imageUrl }}" alt="Made with Bulma" width="128" height="24"></td>
               <td>{{ image.description }}</td>
               <td>
-                <a class="button bd-fat-button is-link is-light is-small" href="{{ imageUrl }}">Download image</a>
+                <a class="button bd-fat-button is-link is-light is-small" href="{{ imageUrl }}">下载图像</a>
               </td>
             </tr>
           {% endfor %}
           <tr>
-            <td style="vertical-align: middle;">All 6</td>
+            <td style="vertical-align: middle;">全部 6 种</td>
             <td style="vertical-align: middle;" colspan="2"><code>made-with-bulma-badges.zip</code></td>
-            <td><a class="button bd-fat-button is-primary is-light is-small" href="{{ site.url }}/images/made-with-bulma-badges.zip"><span><strong>Download</strong> all 6 badges</span></a></td>
+            <td><a class="button bd-fat-button is-primary is-light is-small" href="{{ site.url }}/images/made-with-bulma-badges.zip"><span><strong>下载</strong>全部 6 种徽章</span></a></td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    {% include elements/anchor.html name="Usage" %}
+    {% include elements/anchor.html name="用法" %}
 
     <div class="content">
       <p>
-        Ideally the image is displayed at <code>128x24</code> pixels, and links back to the Bulma website:
+        理想用法是以 <code>128x24</code> 像素显示图案，链接回 Bulma 网站：
       </p>
     </div>
 
@@ -114,8 +114,7 @@ images:
 
     <div class="content">
       <p>
-        Since the original image dimensions are <code>512x96</code> pixels, you can also display it at <code>256x48</code> without losing any quality:
-      </p>
+        尽管原始图像是 <code>512x96</code> 像素，您仍然可以使用 <code>256x48</code> 大小来使用它，而且还不失真：      </p>
     </div>
 
     {% include elements/snippet.html content=image_bigger_example horizontal=true %}
@@ -124,7 +123,7 @@ images:
 
     <div class="content">
       <p>
-        You can simply <strong>embed</strong> an image <strong>directly</strong> on your website by using one of the following snippets.
+        您可以<strong>直接</strong>在您的站点使用下面的任何一种代码简单的<strong>嵌入</strong>徽章图像。
       </p>
     </div>
 

@@ -16,25 +16,25 @@ meta:
 
 {% capture block_example %}
 <div class="block">
-  This text is within a <strong>block</strong>.
+  这段文字在一个 <strong>block</strong> 内。
 </div>
 <div class="block">
-  This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+  这段文字在 <strong>第二个 block</strong> 内。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 </div>
 <div class="block">
-  This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+  这段文字在<strong>第三个 block</strong>内。此 block 没有下边距。
 </div>
 {% endcapture %}
 
 {% capture no_block_example %}
 <div>
-  This text is <em>not</em> within a <strong>block</strong>.
+  这段文字<em>没有</em>使用用 <strong>block</strong>。
 </div>
 <div>
-  This text <em>isn't</em> within a <strong>block</strong> either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+  这段文字<em>也不在</em>一个 <strong>block</strong> 内。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
 </div>
 <div>
-  This text is also <em>not</em> within a <strong>block</strong>.
+  这段文字还是<em>没有</em>在一个 <strong>block</strong> 内。
 </div>
 {% endcapture %}
 
@@ -45,7 +45,7 @@ meta:
 {% endcapture %}
 
 {% capture no_block %}
-<p class="title mb-0">Without block</p>
+<p class="title mb-0">不用 block</p>
 <div class="block mb-0">
   <div class="field is-grouped">
     <div class="control is-expanded">
@@ -88,7 +88,7 @@ meta:
 {% endcapture %}
 
 {% capture with_block %}
-<p class="title">With block</p>
+<p class="title">用 block</p>
 <div class="block">
   <div class="field is-grouped">
     <div class="control is-expanded">
@@ -134,7 +134,7 @@ meta:
 
 <div class="content">
   <p>
-    The <code>block</code> element is a simple <strong>spacer tool</strong>. It allows <strong>sibling</strong> HTML elements to have a consistent margin between them:
+    <code>block</code> 元素是一种简单的<strong>间隔（spacer）工具</strong>。它允许<strong>同级</strong> HTML 元素之间具有一致的边距：
   </p>
 </div>
 
@@ -142,10 +142,10 @@ meta:
 
 <div class="content">
   <p>
-    As you can see, the first two blocks have a <code>margin-bottom</code> applied, but <strong>not the third one.</strong>. That is because Bulma applies a space on all blocks, <strong>except the last one</strong>. This means you can use as many blocks as you want, the spacing will only appear <strong>between them</strong>.
+    如您所见，首先前两个 block 都应用了 <code>margin-bottom</code> ，但是<strong>第三个没有</strong>。这是因为 Bulma 会在<strong>除了最后一个外</strong>的所有 block 上应用空白。这意味着您不管使用多少 block，空白之后出现在<strong>它们之间</strong>。
   </p>
   <p>
-    Without using <code>block</code>, the HTML elements would have no space between them:
+    不使用 <code>block</code>，HTML 元素之间将不留空白：
   </p>
 </div>
 
@@ -153,12 +153,12 @@ meta:
 
 <!--  -->
 
-{% include elements/anchor.html name="You're already using it" %}
+{% include elements/anchor.html name="您已经在使用" %}
 
 
 <div class="content">
   <p>
-    As a matter of fact, you're <strong>already using</strong> the <code>block</code> without knowing it. Its CSS properties are <strong>shared</strong> across several Bulma elements and components:
+    实际上，虽然您未必了解它，但您<strong>已经在用</strong> <code>block</code> 了。其 CSS 属性已经 <strong>遍布</strong> 多个 Bulma 元素和组件之中：
   </p>
 
   <ul>
@@ -177,11 +177,11 @@ meta:
   </ul>
 
   <p>
-    This is thanks to the <code>@extend %block</code> Sass placeholder feature.
+    这要感谢 <code>@extend %block</code> Sass 占位符功能。
   </p>
 
   <p>
-    Here's how it would look like in comparison:
+    这就是用于不用 block 显示比较：
   </p>
 </div>
 
@@ -196,17 +196,17 @@ meta:
 
 <div class="content">
   <p>
-    No matter which Bulma elements and components you are using, and no matter their order, they will have a <strong>consistent space</strong> between them.
+    不管您用哪个 Bulma 元素和组件，也不用管其顺序如何，它们之间都会有一个<strong>统一的间隔</strong>。
   </p>
 </div>
 
 <!--  -->
 
-{% include elements/anchor.html name="One line of CSS" %}
+{% include elements/anchor.html name="一行 CSS" %}
 
 <div class="content">
   <p>
-    As you can see, the CSS of the <code>block</code> is very simple: it applies a <code>margin-bottom</code> on all siblings, <strong>except the last one</strong>.
+    如您所见，<code>block</code> 的 CSS 定义也很简单：它对<strong>除最后一个</strong>外的所有相邻元素应用了 <code>margin-bottom</code> 属性。
   </p>
 </div>
 
@@ -214,7 +214,7 @@ meta:
 
 <div class="content">
   <p>
-    This prevents the last sibling from adding unnecessary space at the bottom.
+    这阻止了最后一个相邻元素添加不必要的底部空白。
   </p>
 </div>
 

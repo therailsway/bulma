@@ -1,6 +1,6 @@
 ---
 title: Icon
-subtitle: "Bulma is compatible with <strong>all icon font libraries</strong>: <a href=\"https://fontawesome.com/\">Font Awesome 5</a>, <a href=\"http://fontawesome.io/\">Font Awesome 4</a>, <a href=\"https://materialdesignicons.com\">Material Design Icons</a>, <a href=\"http://ionicons.com/\">Ionicons</a>, etc."
+subtitle: "Bulma 与<strong>所有图标字体库</strong>兼容：<a href=\"https://fontawesome.com/\">Font Awesome 5</a>、<a href=\"http://fontawesome.io/\">Font Awesome 4</a>、<a href=\"https://materialdesignicons.com\">Material Design Icons</a>、<a href=\"http://ionicons.com/\">Ionicons</a> 等。"
 fontawesome4: true
 ionicons: true
 mdi: true
@@ -234,7 +234,7 @@ meta:
 
 <div class="content">
   <p>
-    The <code>icon</code> element is a <strong>container</strong> for any type of <strong>icon font</strong>. Because the icons can take a few seconds to load, and because you want control over the <strong>space</strong> the icons will take, you can use the <code>icon</code> class as a reliable square container that will prevent the page to "jump" on page load.</p>
+    <code>icon</code> 元素是所有类型<strong>图标字体</strong>的一个<strong>容器</strong>。由于图标可能需要几秒钟延迟加载，所以您可能想要预留出图标所占的<strong>空间</strong>，那么您就可以使用 <code>icon</code> 类作为一个方形容器防止页面加载时被“忽略”掉。</p>
 </div>
 
 <div class="block bd-icon-size">
@@ -243,24 +243,24 @@ meta:
 
 <div class="message is-info">
   <div class="message-body">
-    The <strong>yellow background</strong> is only here for demonstration purposes, to highlight the icon container's area.
+    这里的<strong>黄色背景</strong>仅为演示，用来高亮图标容器背景。
   </div>
 </div>
 
 <div class="content">
   <p>
-    By default, the <code>icon</code> container will take up <em>exactly</em> <code>1.5rem x 1.5rem</code>. The icon itself is sized accordingly to the icon library you're using. For example, Font Awesome 5 icons will <strong>inherit</strong> the font size.
+    默认 <code>icon</code> 容器会占用<em>大约</em> <code>1.5rem x 1.5rem</code> 空间。图标本身型号跟您使用的图标库有关。例如，Font Awesome 5 图标会<strong>继承</strong>字体型号。
   </p>
 </div>
 
 <!--  -->
-{% include elements/anchor.html name="Icon text" %}
+{% include elements/anchor.html name="Icon 文字" %}
 
 {% include elements/new-tag.html version="0.9.2" %}
 
 <div class="content">
   <p>
-    You can combine an <code>icon</code> with <strong>text</strong>, using the <code>icon-text</code> wrapper, as long as all text <em>inside</em> is wrapped in its own <code>span</code> element:
+    您可以组合 <code>icon</code> 和 <strong>text</strong>，用 <code>icon-text</code> 包裹，只需将所有文字包裹在其自己的 <code>span</code> 元素 <em>内</em>：
   </p>
 </div>
 
@@ -268,7 +268,7 @@ meta:
 
 <div class="content">
   <p>
-    You can combine <strong>as many</strong> <code>icon</code> elements and text elements as you want:
+    您可以随意组合<strong>任意数量</strong>的 <code>icon</code> 元素和文本元素：
   </p>
 </div>
 
@@ -276,7 +276,7 @@ meta:
 
 <div class="content">
   <p>
-    Since <code>icon-text</code> is an <code>inline-flex</code> element, it can easily be inserted within any paragraph of <strong>text</strong>.
+    由于 <code>icon-text</code> 是一个 <code>inline-flex</code> 元素，所以它很容易插入段落内<strong>文本</strong>中。
   </p>
 </div>
 
@@ -284,18 +284,18 @@ meta:
 
 <div class="content">
   <p>
-    You can also turn the <code>icon-text</code> into a <code>flex</code> element simply by using a <code>&lt;div&gt;</code> tag instead:
+    您也可以通过使用 <code>&lt;div&gt;</code> 标记将 <code>icon-text</code> 变为 <code>flex</code> 元素：
   </p>
 </div>
 
 {% include elements/snippet.html content=icon_text_div_example %}
 
 <!--  -->
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    Since icon fonts are simply <strong>text</strong>, you can use the <a href="{{ site.url }}/documentation/helpers/color-helpers/">color helpers</a> to change the icon's color.
+    由于图标字体就是简单的<strong>文字</strong>，所以您可以使用<a href="{{ site.url }}/documentation/helpers/color-helpers/">颜色辅助（Color Helper）</a>修改图标颜色。
   </p>
 </div>
 
@@ -303,18 +303,18 @@ meta:
 
 <div class="content">
   <p>
-    The same applies to the <code>icon-text</code>:
+    同样适用 <code>icon-text</code>：
   </p>
 </div>
 
 {% include elements/snippet.html content=icon_text_color_example %}
 
 <!--  -->
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    The Bulma <code>icon</code> container comes in <strong>4 sizes</strong>. It should always be <em>slightly bigger</em> than the icon it contains. For example, Font Awesome 5 icons use a font-size of <code>1em</code> by default (since it inherits the font size), but provides <a href="https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons" target="_blank">additional sizes</a>.
+    Bulma 的 <code>icon</code> 容器有 <strong>4 种型号</strong>。通常它会<em>稍大</em>于图标。例如，Font Awesome 5 图标默认使用 <code>1em</code> 字体型号（由于其集成字体型号），但是也提供了<a href="https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons" target="_blank">补充字体型号</a>。
   </p>
 </div>
 
@@ -474,24 +474,24 @@ meta:
 </table>
 
 <!--  -->
-{% include elements/anchor.html name="Font Awesome variations" %}
+{% include elements/anchor.html name="Font Awesome 的各种变体" %}
 
 <div class="content">
   <p>
-    Font Awesome also provides modifier classes for:
+    Font Awesome 也提供了修饰符类：
   </p>
   <ul>
     <li>
-      fixed width icons
+      定宽图标
     </li>
     <li>
-      bordered icons
+      边框图标
     </li>
     <li>
-      animated icons
+      动画图标
     </li>
     <li>
-      stacked icons
+      堆叠图标
     </li>
   </ul>
 </div>
@@ -499,15 +499,15 @@ meta:
 <table class="table is-bordered">
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Font Awesome class</th>
-      <th>Result</th>
+      <th>类型</th>
+      <th>Font Awesome 类</th>
+      <th>结果</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        Fixed width
+        定宽
       </td>
       <td>
         <code>fas fa-fw</code>
@@ -520,7 +520,7 @@ meta:
     </tr>
     <tr>
       <td>
-        Bordered
+        边框
       </td>
       <td>
         <code>fas fa-border</code>
@@ -533,7 +533,7 @@ meta:
     </tr>
     <tr>
       <td>
-        Animated
+        动画
       </td>
       <td>
         <code>fas fa-spinner fa-pulse</code>
@@ -546,7 +546,7 @@ meta:
     </tr>
     <tr>
       <td rowspan="2">
-        Stacked
+        堆叠
       </td>
       <td>
         {% highlight html %}{{ stacked_medium }}{% endhighlight %}
@@ -577,11 +577,11 @@ meta:
 </table>
 
 <!--  -->
-{% include elements/anchor.html name="Material Design Icons" %}
+{% include elements/anchor.html name="Material Design 图标" %}
 
 <div class="content">
   <p>
-    Here is how the <code>icon</code> container can be used with <a href="https://materialdesignicons.com">Material Design Icons</a>.
+    这是 <code>icon</code> 容器如何用于 <a href="https://materialdesignicons.com">Material Design 图标</a>。
   </p>
 </div>
 
@@ -781,14 +781,14 @@ meta:
 
 <div class="content">
   <p>
-    MDI also provides modifier classes for:
+    MDI 也提供修饰符类：
   </p>
   <ul>
     <li>
-      light and dark icons
+      亮色和暗色
     </li>
     <li>
-      rotated &amp; flipped icons
+      旋转 &amp; 反转图标
     </li>
   </ul>
 </div>
@@ -796,9 +796,9 @@ meta:
 <table class="table is-bordered">
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Material Design Icon class</th>
-      <th>Result</th>
+      <th>类型</th>
+      <th>Material Design Icon 类</th>
+      <th>结果</th>
     </tr>
   </thead>
   <tbody>
@@ -906,7 +906,7 @@ meta:
 
 <div class="content">
   <p>
-    Here is how the <code>icon</code> container can be used with <a href="http://ionicons.com">Ionicons</a>.
+    这是 <code>icon</code> 容器如何用于 <a href="http://ionicons.com">Ionicons</a>。
   </p>
 </div>
 

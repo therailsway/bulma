@@ -1,31 +1,31 @@
 {
   "mobile": {
     "id": "mobile",
-    "name": "Mobile",
+    "name": "移动设备",
     "from": 0,
     "to": 768
   },
   "tablet": {
     "id": "tablet",
-    "name": "Tablet",
+    "name": "平板",
     "from": 769,
     "to": 1023
   },
   "desktop": {
     "id": "desktop",
-    "name": "Desktop",
+    "name": "桌面系统",
     "from": 1024,
     "to": 1215
   },
   "widescreen": {
     "id": "widescreen",
-    "name": "Widescreen",
+    "name": "宽屏",
     "from": 1216,
     "to": 1407
   },
   "fullhd": {
     "id": "fullhd",
-    "name": "FullHD",
+    "name": "巨屏",
     "from": 1408
   }
 }

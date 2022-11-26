@@ -1,5 +1,5 @@
 ---
-title: Modularity
+title: 模块化
 layout: documentation
 doc-tab: overview
 doc-subtab: modular
@@ -50,29 +50,29 @@ breadcrumb:
 
 <div class="content">
   <p>
-    Bulma consists of <strong>39</strong> <code>.sass</code> files that you can import <strong>individually.</strong>
+    Bulma 由 <strong>39</strong> <code>.sass</code> 文件组成，这些文件都可以<strong>单独</strong>导入。
   </p>
   <p>
-    For example, let's say you only want the Bulma <strong>columns.</strong>
+    例如：假如您需要 Bulma <strong>columns</strong> 组件。
     <br>
-    The file is located in the <code>bulma/sass/grid</code> folder.
+    文件在 <code>bulma/sass/grid</code> 文件夹内。
     <br>
-    Simply <strong>import</strong> the utilities dependencies, and then the files you need directly:
+    简单 <strong>import</strong> 依赖的工具类，然后您需要的组件就可以使用了：
   </p>
   {% highlight sass %}{{ import }}{% endhighlight %}
   <p>
-    Now you can use the classes <code>.columns</code> (for the container) and <code>.column</code> directly:
+    现在您可以使用 <code>.columns</code> （针对 container）和 <code>.column</code> 了：
   </p>
   {% highlight html %}{{ columns }}{% endhighlight %}
 
   <hr>
 
   <p>
-    What if you only want the <strong>button</strong> styles instead?
+    如果您需要的是 <strong>button</strong> 样式呢？
   </p>
   {% highlight sass %}{{ only_button }}{% endhighlight %}
   <p>
-    You can now use the <code>.button</code> class, and all its modifiers:
+    也是一样，现在您可以使用 <code>.button</code> 类和它的修饰符了：
   </p>
   <ul>
     <li>

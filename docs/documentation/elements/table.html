@@ -1,5 +1,5 @@
 ---
-title: Table
+title: 表格
 layout: documentation
 doc-tab: elements
 doc-subtab: table
@@ -316,30 +316,30 @@ meta:
 
 <div class="content">
   <p>
-    You can create a <strong>Bulma table</strong> simply by attaching a single <code>table</code> CSS class on a <code>&lt;table&gt;</code> HTML element with the following structure:
+    创建 <strong>Bulma 表格</strong>只需添加一个 <code>table</code> CSS 类到具有有如下结构的 HTML 元素 <code>&lt;table&gt;</code> 上即可：
   </p>
 
   <ul>
     <li>
-      <code>&lt;table class="table"&gt;</code> as the main <strong>container</strong>
+      <code>&lt;table class="table"&gt;</code> 做为主 <strong>容器</strong>
       <ul>
         <li>
-          <code>thead</code> the optional <strong>top</strong> part of the table
+          <code>thead</code> 为可选的表格<strong>顶部</strong>
         </li>
         <li>
-          <code>tfoot</code> the optional <strong>bottom</strong> part of the table
+          <code>tfoot</code> 为可选的表格<strong>底部</strong>
         </li>
         <li>
-          <code>tbody</code> the main <strong>content</strong> of the table
+          <code>tbody</code> 为表格主<strong>内容</strong>区
           <ul>
             <li>
-              <code>tr</code> each table <strong>row</strong>
+              <code>tr</code> 为表格的每一<strong>行</strong>
               <ul>
                 <li>
-                  <code>th</code> a table cell <strong>heading</strong>
+                  <code>th</code> 是表格的单元格<strong>标题</strong>
                 </li>
                 <li>
-                  <code>td</code> a table <strong>cell</strong>
+                  <code>td</code> 是表格的<strong>单元格</strong>
                 </li>
               </ul>
             </li>
@@ -349,13 +349,13 @@ meta:
     </li>
   </ul>
   <p>
-    You can set a table row as <strong>selected</strong> by appending the <code>is-selected</code> modifier on a <code>&lt;tr&gt;</code>
+    您可以通过在 <code>&lt;tr&gt;</code> 上添加 <code>is-selected</code> 修饰符表示该行被<strong>选定</strong>
   </p>
 </div>
 
 {% include elements/snippet.html content=table_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Modifiers" %}
+{% include elements/anchor.html name="修饰符" %}
 
 {% capture scrollable_table %}
 <div class="table-container">
@@ -383,7 +383,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>Add <strong>borders</strong> to all the cells.</p>
+    <p>给所有单元格添加 <strong>边框</strong>。</p>
   </div>
   <div class="column">
     <code>table is-bordered</code>
@@ -408,7 +408,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>Add <strong>stripes</strong> to the table.</p>
+    <p>给表格添加<strong>条纹</strong>。</p>
   </div>
   <div class="column">
     <code>table is-striped</code>
@@ -449,7 +449,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>Make the cells <strong>narrower</strong>.</p>
+    <p>使所有单元格<strong>更细</strong>。</p>
   </div>
   <div class="column">
     <code>table is-narrow</code>
@@ -490,7 +490,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>You can add a <strong>hover effect</strong> on each row</p>
+    <p>您还可以为每一行添加<strong>悬浮效果</strong></p>
   </div>
   <div class="column">
     <code>table is-hoverable</code>
@@ -531,7 +531,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>You can have a <strong>fullwidth</strong> table.</p>
+    <p>您可以使表格<strong>最宽</strong>。</p>
   </div>
   <div class="column">
     <code>table is-fullwidth</code>
@@ -572,7 +572,7 @@ meta:
 
 <div class="columns">
   <div class="column">
-    <p>You can <strong>combine</strong> all five modifiers.</p>
+    <p>您可以<strong>组合</strong>全部五个修饰符。</p>
   </div>
   <div class="column">
     <code>table is-bordered is-striped is-narrow is-hoverable is-fullwidth</code>
@@ -611,10 +611,10 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Table container" %}
+{% include elements/anchor.html name="表格容器" %}
 
 <p class="content">
-  You can create a <strong>scrollable table</strong> by wrapping a <code>table</code> in a <code>table-container</code> element:
+  您可以通过在一个 <code>table-container</code> 元素里包裹 <code>table</code> 创建一个<strong>可滚动的表格</strong>：
 </p>
 
 {% highlight html %}{{ scrollable_table }}{% endhighlight %}

@@ -5,28 +5,28 @@
       "color": "has-text-success",
       "fa_type": "fas",
       "fa_icon": "fa-play-circle",
-      "title": "Videos"
+      "title": "视频"
     },
     {
       "id": "expo",
       "color": "has-text-star",
       "fa_type": "fas",
       "fa_icon": "fa-star",
-      "title": "Expo"
+      "title": "展览"
     },
     {
       "id": "love",
       "color": "has-text-danger",
       "fa_type": "fas",
       "fa_icon": "fa-heart",
-      "title": "Love"
+      "title": "挚爱"
     },
     {
       "id": "blog",
       "color": "bd-has-text-rss",
       "fa_type": "fas",
       "fa_icon": "fa-rss",
-      "title": "Blog"
+      "title": "网志"
     }
   ],
   "other_items": [
@@ -35,14 +35,14 @@
       "color": "has-text-info",
       "fa_type": "fas",
       "fa_icon": "fa-code",
-      "title": "Templates"
+      "title": "模板"
     },
     {
       "id": "recipes",
       "color": "has-text-purple",
       "fa_type": "fas",
       "fa_icon": "fa-utensils",
-      "title": "Recipes"
+      "title": "菜谱"
     },
   ],
   "more_items": [
@@ -51,40 +51,40 @@
       "color": "success",
       "fa_type": "fas",
       "fa_icon": "fa-rocket",
-      "title": "Bulma start",
-      "description": "A tiny npm package to get started"
+      "title": "Bulma 起步",
+      "description": "用于起步的小的 npm 包"
     },
     {
       "id": "made-with-bulma",
       "color": "primary",
       "fa_type": "fas",
       "fa_icon": "fa-certificate",
-      "title": "Made with Bulma",
-      "description": "The official community badge"
+      "title": "Bulma 制造",
+      "description": "官方社区徽章"
     },
     {
       "id": "alternative-to-bootstrap",
       "color": "bootstrap",
       "fa_type": "fas",
       "fa_icon": "fa-exchange-alt",
-      "title": "Coming from Bootstrap",
-      "description": "See how Bulma is an alternative to Bootstrap"
+      "title": "来自 Bootstrap 的老铁",
+      "description": "Bulma 如何成为 Bootstrap 的替代品"
     },
     {
       "id": "backers",
       "color": "patreon",
       "fa_type": "fab",
       "fa_icon": "fa-patreon",
-      "title": "Patreon and GitHub backers",
-      "description": "Everyone who is supporting Bulma"
+      "title": "用户和 GitHub 支持者",
+      "description": "每个支持 Bulma 的人"
     },
     {
       "id": "extensions",
       "color": "danger",
       "fa_type": "fas",
       "fa_icon": "fa-plug",
-      "title": "Extensions",
-      "description": "Side projects to enhance Bulma",
+      "title": "扩展",
+      "description": "丰富 Bulma 的第三方扩展",
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-fulltitle: Bulma Videos
+fulltitle: Bulma 视频
 layout: default
 route: videos
 breadcrumb:
@@ -7,7 +7,7 @@ breadcrumb:
 - videos
 videos:
 - id: tesla
-  title: Tesla launch page
+  title: 特斯拉 launch 页面
   subtitle: 4 videos – 20 min
   content: Design a responsive launch page with Bulma's component and CSS Grid.
   video_url: https://scrimba.com/p/pV5eHk/cvrwyfR
@@ -36,7 +36,7 @@ videos:
     <i class="fas fa-graduation-cap"></i>
   </span>
   <span>
-    Enroll in the free course
+    注册自由课程
   </span>
 </a>
 {% endcapture %}
@@ -45,8 +45,8 @@ videos:
   include components/hero.html
   color="videos"
   icon="fas fa-play-circle"
-  title="**Video** tutorials"
-  subtitle="Learn Bulma with free interactive Scrimba tutorials"
+  title="**视频** 教程"
+  subtitle="用自由可互动的 Scrimba 教程学习 Bulma"
   content=hero_content
 %}
 
@@ -73,12 +73,12 @@ videos:
             <span class="icon">
               <i class="fas fa-play"></i>
             </span>
-            <span>Watch video</span>
+            <span>观看视频</span>
           </a>
 
           {% if video.article_url %}
             <a class="button bd-fat-button is-success is-light is-medium" href="{{ video.article_url }}" target="_blank" rel="nofollow">
-              Read article
+              阅读文章
             </a>
           {% endif %}
         </p>

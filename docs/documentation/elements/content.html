@@ -166,38 +166,38 @@ meta:
 {% endcapture %}
 
 <div class="content">
-  <p>When you can't use the CSS classes you want, or when you just want to directly use HTML tags, use <code>content</code> as container. It can handle almost any HTML tag:</p>
+  <p>当您不能使用想用的 CSS 类时，或者您只想直接使用 HTML 标记时，使用 <code>content</code> 容器。它能处理几乎所有 HTML 标记：</p>
   <ul>
-    <li><code>&lt;p&gt;</code> paragraphs</li>
-    <li><code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code> <code>&lt;dl&gt;</code> lists</li>
-    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> headings</li>
-    <li><code>&lt;blockquote&gt;</code> quotes</li>
-    <li><code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code></li>
-    <li><code>&lt;table&gt;</code> <code>&lt;tr&gt;</code> <code>&lt;th&gt;</code> <code>&lt;td&gt;</code> tables</li>
+    <li><code>&lt;p&gt;</code> 段落</li>
+    <li><code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code> <code>&lt;dl&gt;</code> 列表</li>
+    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> 标题</li>
+    <li><code>&lt;blockquote&gt;</code> 引用</li>
+    <li><code>&lt;em&gt;</code> 和 <code>&lt;strong&gt;</code></li>
+    <li><code>&lt;table&gt;</code> <code>&lt;tr&gt;</code> <code>&lt;th&gt;</code> <code>&lt;td&gt;</code> 表</li>
   </ul>
-  <p>This <code>content</code> class can be used in <em>any</em> context where you just want to (or can only) write some <strong>text</strong>. For example, it's used for the paragraph you're currently reading.</p>
+  <p>这个 <code>content</code> 类可用于<em>任何</em>您想（或只能）写<strong>文字</strong>的地方。例如，他常用于段落（您正在阅读的就是）。</p>
 </div>
 
-{% include elements/anchor.html name="Full example" %}
+{% include elements/anchor.html name="完整示例" %}
 
 <div class="content">
-  Here is an example of the <code>content</code> Bulma element with all the supported HTML tags:
+  这是一个使用了 Bulma 元素中所有支持的 HTML 标记的 <code>content</code> 示例：
 </div>
 
 {% include elements/snippet.html content=content_example %}
 
-{% include elements/anchor.html name="Ordered lists alternatives" %}
+{% include elements/anchor.html name="有序列表扩展" %}
 
 <div class="content">
   <p>
-    <strong>Ordered lists</strong> <code>&lt;ol&gt;</code> support different <strong>types</strong> of items markers. To modify them, use either:
+    <strong>有序列表</strong> <code>&lt;ol&gt;</code> 支持不同 <strong>类型</strong> 的项目标记。要修改它们，可以使用：
   </p>
   <ul>
     <li>
-      the corresponding HTML attribute value
+      相关 HTML 属性值
     </li>
     <li>
-      one of the following CSS modifier classes: <code>is-lower-alpha</code>, <code>is-lower-roman</code>, <code>is-upper-alpha</code> or <code>is-upper-roman</code>
+      下列 CSS 修饰符类之一：<code>is-lower-alpha</code>, <code>is-lower-roman</code>, <code>is-upper-alpha</code> or <code>is-upper-roman</code>
     </li>
   </ul>
 </div>
@@ -206,10 +206,10 @@ meta:
 
 {% include elements/snippet.html content=content_ol_css_example %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
-  <p>You can use the <code>is-small</code>, <code>is-medium</code> and <code>is-large</code> modifiers to change the font size.</p>
+  <p>您可以使用 <code>is-small</code>、<code>is-medium</code> 和 <code>is-large</code> 修饰符来更改文字型号。</p>
 </div>
 
 
@@ -274,25 +274,25 @@ meta:
 {% endcapture %}
 
 <div class="content">
-  <h4>Small size <code>content</code></h4>
+  <h4>小号 <code>content</code></h4>
 </div>
 
 {% include elements/snippet.html content=small_example %}
 
 <div class="content">
-  <h4>Normal size <code>content</code> <em>(default)</em></h4>
+  <h4>普号 <code>content</code> <em>（默认）</em></h4>
 </div>
 
 {% include elements/snippet.html content=normal_example %}
 
 <div class="content">
-  <h4>Medium size <code>content</code></h4>
+  <h4>中号 <code>content</code></h4>
 </div>
 
 {% include elements/snippet.html content=medium_example %}
 
 <div class="content">
-  <h4>Large size <code>content</code></h4>
+  <h4>大号 <code>content</code></h4>
 </div>
 
 {% include elements/snippet.html content=large_example %}

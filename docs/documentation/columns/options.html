@@ -1,5 +1,5 @@
 ---
-title: Column options
+title: 列选项
 layout: documentation
 doc-tab: columns
 doc-subtab: options
@@ -98,10 +98,10 @@ breadcrumb:
 </div>
 {% endcapture %}
 
-{% include elements/anchor.html name="Vertical alignment" %}
+{% include elements/anchor.html name="垂直对齐" %}
 
 <div class="content">
-  <p>To align your columns vertically, add the <code>is-vcentered</code> modifier to the <code>columns</code> container.</p>
+  <p>要垂直对其列，在容器 <code>columns</code> 上添加 <code>is-vcentered</code> 修饰符。</p>
 </div>
 
 <div class="columns is-vcentered">
@@ -115,10 +115,10 @@ breadcrumb:
 
 {% highlight html %}{{ columns_vcentered }}{% endhighlight %}
 
-{% include elements/anchor.html name="Multiline" %}
+{% include elements/anchor.html name="多行" %}
 
 <div class="content">
-  <p>Whenever you want to start a new line, you can close a <code>columns</code> container and start a new one. But you can also add the <code>is-multiline</code> modifier and add <strong>more</strong> column elements than would fit in a single row.</p>
+  <p>当您想要开始新的一行的时候，可以关闭一个容器 <code>columns</code> 然后再开始一个。但是，您也可以通过添加 <code>is-multiline</code> 修饰符和添加<strong>更多</strong>列元素来实现。</p>
 </div>
 
 <div class="columns is-multiline is-mobile">
@@ -153,11 +153,11 @@ breadcrumb:
 
 {% highlight html %}{{ columns_multiline }}{% endhighlight %}
 
-{% include elements/anchor.html name="Centering columns" %}
+{% include elements/anchor.html name="列居中" %}
 
 <div class="content">
   <p>
-    While you can use <em>empty columns</em> (like <code>&lt;div class="column"&gt;&lt;/div&gt;</code>) to create horizontal space around <code>.column</code> elements, you can also use <code>.is-centered</code> on the parent <code>.columns</code> element:
+    当您使用<em>空列</em>（如 <code>&lt;div class="column"&gt;&lt;/div&gt;</code>）创建水平的空占位 <code>.column</code> 元素时，您也可以在其父元素 <code>.columns</code> 上使用 <code>.is-centered</code> 来实现：
   </p>
 </div>
 
@@ -173,7 +173,7 @@ breadcrumb:
 
 <div class="content">
   <p>
-    Use with <code>.is-multiline</code> to create a flexible, centered list (try resizing to see centering in different viewport sizes):
+    使用 <code>.is-multiline</code> 创建一个弹性的、剧中的列表（试着调整浏览器窗口大小查看不同视口下剧中的效果）：
   </p>
 </div>
 
