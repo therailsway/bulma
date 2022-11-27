@@ -20,7 +20,7 @@ breadcrumb:
   subtitle="用 Bulma 设计的那些千姿百态的站点"
 %}
 
-{% assign encoded_url = 'Here is my lovely website!' | urlencode %}
+{% assign encoded_url = '这是我的可爱的网站！' | urlencode %}
 {% assign tweet_href = 'https://twitter.com/intent/tweet?text=' | append: encoded_url | append: '&hashtags=madewithbulma' %}
 
 {% capture call_button %}
@@ -34,7 +34,7 @@ breadcrumb:
 {%
   include components/call.html
   color="twitter"
-  text='Did you design a gorgeous website with Bulma too? <strong>Tell us about it!</strong> <span style="font-size: 20px; margin-left: 2px; position: relative; top: 1px;">🤗</span>'
+  text='您也用 Bulma 设计出了惊世骇俗的网站吗？<strong>告诉我们吧！</strong> <span style="font-size: 20px; margin-left: 2px; position: relative; top: 1px;">🤗</span>'
   button=call_button
 %}
 
