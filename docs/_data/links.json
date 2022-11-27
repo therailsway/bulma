@@ -502,21 +502,21 @@
     },
     "elements-title": {
       "name": "Title",
-      "subtitle": "Simple <strong>headings</strong> to add depth to your page",
+      "subtitle": "简单的<strong>标题</strong>可以为您的页面增加层次",
       "color": "black",
       "icon": "heading",
       "path": "/documentation/elements/title/"
     },
     "components": {
       "name": "组件",
-      "subtitle": "Advanced multi-part components with lots of possibilities",
+      "subtitle": "高级多层次组件带来无限可能",
       "color": "danger",
       "icon": "cubes",
       "path": "/documentation/components/"
     },
     "components-breadcrumb": {
       "name": "Breadcrumb",
-      "subtitle": "A simple <strong>breadcrumb</strong> component to improve your navigation experience",
+      "subtitle": "一个简单的 <strong>breadcrumb</strong> 组件会提升您的导航体验",
       "color": "star",
       "icon": "ellipsis-h",
       "path": "/documentation/components/breadcrumb/"

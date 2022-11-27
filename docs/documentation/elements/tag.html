@@ -224,17 +224,17 @@ meta:
 
 <div class="content">
   <p>
-    Bulma 的 <strong>Tag</strong> 虽小但本事大。 It's very useful as a way to attach information to a block or other component. Its size makes it also easy to display in numbers, making it appropriate for long lists of items.
+    Bulma 的 <strong>Tag</strong>——人小本事大。当需要附加信息到一个 Block 或者其他组件的时候 Tag 非常有用。其体型令其很适合显示数字，适用于长列表项。
   </p>
 </div>
 
 <div class="columns">
   <div class="column is-4">
-    By default, a <strong>tag</strong> is a 1.5rem high label.
+    默认情况下，一个 <strong>Tag</strong> 是一个 1.5rem 高度的标签。
   </div>
   <div class="column is-2">
     <span class="tag">
-      Tag label
+      Tag 标签
     </span>
   </div>
   <div class="column is-6">
@@ -242,11 +242,11 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="columns">
   <div class="column is-4">
-    Like with buttons, there are <strong>10 different colors</strong> available.
+    跟 Button 一样有 <strong>10 种不同颜色</strong>可选。
   </div>
   <div class="column is-2">
     <p class="field">
@@ -306,7 +306,7 @@ meta:
 <div class="columns">
   <div class="column is-4">
     <p>
-      You can now choose the <strong>light version</strong> of a color.
+      您还可以选择颜色的<strong>高亮（light）版本</strong>。
     </p>
   </div>
   <div class="column is-2">
@@ -344,33 +344,33 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="columns">
   <div class="column is-4">
     <div class="content">
       <p>
-        The tag comes in <strong>3 different</strong> sizes.
+        Tag 有 <strong>3 种不同</strong>型号。
       </p>
       <p>
-        While the default size is the <strong>normal</strong> one, the <code>is-normal</code> modifier exists in case you need to reset the tag to its normal size.
+        默认型号为 <strong>普通（normal）</strong>，之所以有 <code>is-normal</code> 修饰符就是为了您可能有重置 Tag 为普通型号的需要。
       </p>
     </div>
   </div>
   <div class="column is-2">
     <p class="field">
       <span class="tag is-link is-normal">
-        Normal
+        普通
       </span>
     </p>
     <p class="field">
       <span class="tag is-primary is-medium">
-        Medium
+        中型
       </span>
     </p>
     <p class="field">
       <span class="tag is-info is-large">
-        Large
+        大型
       </span>
     </p>
   </div>
@@ -381,7 +381,7 @@ meta:
 
 <div class="content">
   <p>
-    You can change the size of <strong>all</strong> tags at once:
+    您可以一次性修改<strong>所有</strong> Tag：
   </p>
 </div>
 
@@ -391,17 +391,17 @@ meta:
 
 <div class="content">
   <p>
-    You can however keep the original size of a <strong>subset</strong> of tags, simply by applying one of its modifier class:
+    您可以通过为一组 Tag 中的某一个添加修饰符类，从而使添加修饰符的 Tag 型号改变的同时还能保持组内 <strong>其他</strong> Tag 的型号不变：
   </p>
 </div>
 
 {% include elements/snippet.html content=are_medium_one_large %}
 
-{% include elements/anchor.html name="Modifiers" %}
+{% include elements/anchor.html name="修饰符" %}
 
 <div class="columns">
   <div class="column is-4">
-    You can add the <code>is-rounded</code> modifier to make a <strong>rounded</strong> tag.
+    您可以添加 <code>is-rounded</code> 修饰符使 Tag 变为<strong>圆角（rounded）</strong>。
   </div>
   <div class="column is-2">
     {{ rounded }}
@@ -413,7 +413,7 @@ meta:
 
 <div class="columns">
   <div class="column is-4">
-    You can add the <code>is-delete</code> modifier to turn the tag into a <strong>delete button</strong>.
+    您可以添加 <code>is-delete</code> 修饰符使 Tag 变成一个 <strong>delete button</strong>。
   </div>
   <div class="column is-2">
     {{ is_delete }}
@@ -423,11 +423,11 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Combinations" %}
+{% include elements/anchor.html name="组合" %}
 
 <div class="columns">
   <div class="column is-4">
-    You can append a <strong>delete button</strong>.
+    您可以添加一个 <strong>delete button</strong>。
   </div>
   <div class="column is-2">
     <p class="field">
@@ -454,13 +454,13 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="List of tags" %}
+{% include elements/anchor.html name="Tag 列表" %}
 
 <div class="columns">
   <div class="column">
     <div class="content">
       <p>
-        You can now create a <strong>list of tags</strong> with the <code>tags</code> container.
+        您现在可以用 <code>tags</code> 做为容器创建一个 <strong>Tag 列表</strong>。
       </p>
     </div>
     <div class="bd-example">
@@ -476,7 +476,7 @@ meta:
   <div class="column">
     <div class="content">
       <p>
-        If the list is <strong>very long</strong>, it will automatically wrap on <strong>multiple lines</strong>, while keeping all tags <strong>evenly spaced</strong>.
+        如果列表<strong>很长</strong>，它会自动生成 <strong>multiple lines</strong> 包裹变成多行，并且保持所有 Tag <strong>合理布局</strong>。
       </p>
     </div>
     <div class="bd-example">
@@ -488,13 +488,13 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Tag addons" %}
+{% include elements/anchor.html name="Tag 扩展" %}
 
 <div class="columns">
   <div class="column">
     <div class="content">
       <p>
-        You can <strong>attach tags together</strong> with the <code>has-addons</code> modifier.
+        您可以组合 <strong>tags</strong> 和 <code>has-addons</code> 修饰符到一起。
       </p>
     </div>
     <div class="bd-example">
@@ -510,7 +510,7 @@ meta:
   <div class="column">
     <div class="content">
       <p>
-        You can attach a <strong>text</strong> tag with a <strong>delete</strong> tag together.
+        您也可以组合 <strong>text</strong> 和 <strong>delete</strong> 修饰符。
       </p>
     </div>
     <div class="bd-example">
@@ -526,7 +526,7 @@ meta:
   <div class="column">
     <div class="content">
       <p>
-        If you want to attach <code>tags</code> containers <strong>together</strong>, simply use the <code>field</code> element with the <code>is-grouped</code> and <code>is-grouped-multiline</code> modifiers.
+        如果您想组合多个 <code>tags</code> 容器到<strong>一起</strong>，就用带有 <code>is-grouped</code> 和 <code>is-grouped-multiline</code> 修饰符的 <code>field</code> 元素。
       </p>
     </div>
     <div class="bd-example">
@@ -542,7 +542,7 @@ meta:
   <div class="column">
     <div class="content">
       <p>
-        This can be useful for a long list of <strong>blog tags</strong>.
+        这对于很长的<strong>博客 tags</strong> 列表就很适合。
       </p>
     </div>
     <div class="bd-example">
