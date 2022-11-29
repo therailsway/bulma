@@ -1,5 +1,5 @@
 ---
-title: Navbar
+title: 导航条（Navbar）
 layout: documentation
 doc-tab: components
 doc-subtab: navbar
@@ -611,40 +611,39 @@ $(document).ready(function() {
 
 <div class="content">
   <p>
-    The <code>navbar</code> component is a responsive and versatile horizontal navigation bar with the following structure:
+    自适应的、横向多功能的<code>导航条（navbar）</code>组件结构如下：
   </p>
   <ul>
     <li>
-      <code>navbar</code> the <strong>main</strong> container
+      <code>navbar</code> 是<strong>主</strong>容器
       <ul>
         <li>
-          <code>navbar-brand</code> the <strong>left side</strong>, <strong class="has-text-success">always visible</strong>, which usually contains the <strong>logo</strong> and optionally some links or icons
+          <code>navbar-brand</code> 是<strong>左边栏</strong>，<strong class="has-text-success">总是可见的</strong>，通常包含<strong>标志</strong>和可选的链接或者图标
           <ul>
             <li>
-              <code>navbar-burger</code> the <strong>hamburger</strong> icon, which toggles the navbar menu on touch devices
-            </li>
+              <code>navbar-burger</code>是一个<strong>汉堡</strong>图标，用来在触屏设备上切换 navbar 菜单            </li>
           </ul>
         </li>
         <li>
-          <code>navbar-menu</code> the <strong>right side</strong>, hidden on touch devices, visible on desktop
+          <code>navbar-menu</code> 是<strong>右边栏</strong>，在触屏设备上隐藏，桌面设备上可见
           <ul>
             <li>
-              <code>navbar-start</code> the <strong>left part</strong> of the menu, which appears next to the navbar brand on desktop
+              <code>navbar-start</code> 是菜单的<strong>左边部分</strong>，在桌面系统上会紧挨着导航条的标志部分
             </li>
             <li>
-              <code>navbar-end</code> the <strong>right part</strong> of the menu, which appears at the end of the navbar
+              <code>navbar-end</code> 是菜单的<strong>右边部分</strong>，会出现在导航条的尾部
               <ul>
                 <li>
-                  <code>navbar-item</code> each <strong>single item</strong> of the navbar, which can either be an <code>a</code> or a <code>div</code>
+                  <code>navbar-item</code> 是导航条的每一个<strong>独立的项目</strong>，既可以是 <code>a</code> 也可以是 <code>div</code>
                   <ul>
                     <li>
-                      <code>navbar-link</code> a <strong>link</strong> as the sibling of a dropdown, with an arrow
+                      <code>navbar-link</code> 是一个包含相邻元素的带有箭头的下拉菜单<strong>链接</strong>
                     </li>
                     <li>
-                      <code>navbar-dropdown</code> the <strong>dropdown menu</strong>, which can include navbar items and dividers
+                      <code>navbar-dropdown</code> 是包含导航条项目和分割线的<strong>下拉菜单</strong>
                       <ul>
                         <li>
-                          <code>navbar-divider</code> a <strong>horizontal line</strong> to separate navbar items
+                          <code>navbar-divider</code> 是分隔导航条项目的<strong>水平线</strong>
                         </li>
                       </ul>
                     </li>
@@ -659,7 +658,7 @@ $(document).ready(function() {
   </ul>
 </div>
 
-{% include elements/anchor.html name="Basic Navbar" %}
+{% include elements/anchor.html name="基本 Navbar" %}
 
 <div class="content">
   <p>

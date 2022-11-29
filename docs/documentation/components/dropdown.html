@@ -1,5 +1,5 @@
 ---
-title: Dropdown
+title: 下拉菜单（Dropdown）
 layout: documentation
 doc-tab: components
 doc-subtab: dropdown
@@ -199,26 +199,26 @@ meta:
 
 <div class="content">
   <p>
-    The <code>dropdown</code> component is a container for a dropdown button and a dropdown menu.
+    <code>dropdown</code> 组件是包含了一个 dropdown 按钮和一个 dropdown 菜单的容器。
   </p>
   <ul>
     <li>
-      <code>dropdown</code> the <strong>main</strong> container
+      <code>dropdown</code> 是<strong>主</strong>容器
       <ul>
         <li>
-          <code>dropdown-trigger</code> the container for a <code>button</code>
+          <code>dropdown-trigger</code> 是 <code>button</code> 的容器
         </li>
         <li>
-          <code>dropdown-menu</code> the toggable menu, <strong>hidden</strong> by default
+          <code>dropdown-menu</code> 是切换菜单组件，默认<strong>隐藏</strong>
           <ul>
             <li>
-              <code>dropdown-content</code> the dropdown <strong>box</strong>, with a white background and a shadow
+              <code>dropdown-content</code> 下来菜单的<strong>盒子</strong>，由白背景和阴影
               <ul>
                 <li>
-                  <code>dropdown-item</code> each <strong>single item</strong> of the dropdown, which can either be a <code>a</code> or a <code>div</code>
+                  <code>dropdown-item</code> 是下来菜单的<strong>单个项目</strong>，既可以是 <code>a</code> 也可以是 <code>div</code> 元素
                 </li>
                 <li>
-                  <code>dropdown-divider</code> a <strong>horizontal line</strong> to separate dropdown items
+                  <code>dropdown-divider</code> 分给或分组下拉菜单项目的 <strong>水平线</strong>
                 </li>
               </ul>
             </li>
@@ -231,35 +231,35 @@ meta:
 
 {% include elements/snippet.html content=dropdown_example %}
 
-{% include elements/anchor.html name="Dropdown content" %}
+{% include elements/anchor.html name="Dropdown 内容" %}
 
 <div class="content">
   <p>
-    While the <code>dropdown-item</code> can be used as an anchor link <code>&lt;a&gt;</code>, you can also use a <code>&lt;div&gt;</code> and insert almost <strong>any type of content</strong>.
+    <code>dropdown-item</code>可以使用锚点（anchor）链接 <code>&lt;a&gt;</code> 或者使用 <code>&lt;div&gt;</code>，然后插入<strong>任何类型的内容</strong>。
   </p>
 </div>
 
 {% include elements/snippet.html content=dropdown_content_example %}
 
-{% include elements/anchor.html name="Hoverable or Toggable" %}
+{% include elements/anchor.html name="可悬停或者切换" %}
 
 <div class="content">
   <p>
-    The <code>dropdown</code> component has <strong>2 additional modifiers</strong>
+    <code>dropdown</code> 组件有 <strong>2 个扩展修饰符</strong>
   </p>
   <ul>
     <li>
-      <code>is-hoverable</code>: the dropdown will show up when <strong>hovering</strong> the <code>dropdown-trigger</code>
+      <code>is-hoverable</code>：dropdown 当 <strong>（悬停）hovering</strong> 是触发 <code>dropdown-trigger</code> 显示下拉菜单
     </li>
     <li>
-      <code>is-active</code>: the dropdown will show up <strong>all the time</strong>
+      <code>is-active</code>：下来菜单<strong>全时</strong>始终显示
     </li>
   </ul>
 </div>
 
 <div class="message is-success">
   <p class="message-body">
-    While the CSS <code>:hover</code> implementation works perfectly, the <code>is-active</code> class is available for users who want to control the display of the dropdown with <strong>JavaScript</strong>.
+    CSS <code>:hover</code> 扩展也能很好运行， <code>is-active</code> 类只是为了那些想要通过 <strong>JavaScript</strong> 控制下来菜单显示的用户而准备的。
   </p>
 </div>
 
@@ -267,11 +267,11 @@ meta:
 
 {% include elements/snippet.html content=dropdown_info_example more=true %}
 
-{% include elements/anchor.html name="Right aligned" %}
+{% include elements/anchor.html name="向右对齐" %}
 
 <div class="content">
   <p>
-    You can add the <code>is-right</code> modifier to have a <strong>right-aligned</strong> dropdown.
+    您可以添加 <code>is-right</code> 修饰符，就拥有了一个<strong>（右对齐）right-aligned</strong> 的 dropdown。
   </p>
 </div>
 
@@ -279,11 +279,11 @@ meta:
 
 {% include elements/snippet.html content=dropdown_right_example more=true %}
 
-{% include elements/anchor.html name="Dropup" %}
+{% include elements/anchor.html name="上拉菜单（Dropup）" %}
 
 <div class="content">
   <p>
-    You can add the <code>is-up</code> modifier to have a dropdown menu that appears above the dropdown button.
+    您可以添加 <code>is-up</code> 修饰符是下拉菜单成上拉菜单。
   </p>
 </div>
 

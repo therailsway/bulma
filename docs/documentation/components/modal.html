@@ -1,5 +1,5 @@
 ---
-title: Modal
+title: 模态框（Modal）
 layout: documentation
 doc-tab: components
 doc-subtab: modal
@@ -132,25 +132,25 @@ document.addEventListener('DOMContentLoaded', () => {
 <!--  -->
 
 <div class="content">
-  <p>The modal structure is very simple:</p>
+  <p>模态框（Modal）结构非常简单：</p>
   <ul>
     <li>
-      <code>modal</code>: the main container
+      <code>modal</code>：主容器
       <ul>
         <li>
-          <code>modal-background</code>: a transparent overlay that can act as a click target to close the modal
+          <code>modal-background</code>：一个可以做为关闭 modal 时点击目标的透明覆盖物
         </li>
         <li>
-          <code>modal-content</code>: a horizontally and vertically centered container, with a maximum width of 640px, in which you can include <em>any</em> content
+          <code>modal-content</code>: 一个不管水平还是竖直都居中的最大宽度为 640px 的容器，其内您可以添加<em>任何</em>内容
         </li>
         <li>
-          <code>modal-close</code>: a simple cross located in the top right corner
+          <code>modal-close</code>: 一个在顶端靠右端的小十字
         </li>
       </ul>
     </li>
   </ul>
   <p>
-    <button class="button is-primary is-large modal-button" data-target="modal" aria-haspopup="true">Launch example modal</button>
+    <button class="button is-primary is-large modal-button" data-target="modal" aria-haspopup="true">加载 modal 示例</button>
   </p>
 </div>
 
@@ -158,37 +158,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="content">
   <p>
-    To <strong>activate</strong> the modal, just add the <code>is-active</code> modifier on the <code>.modal</code> container.
-    You may also want to add <code>is-clipped</code> modifier to a containing element (usually <code>html</code>) to stop scroll overflow.
-  </p>
+    <strong>激活</strong>模态框只需在 <code>.modal</code> 容器上添加 <code>is-active</code> 修饰符。您可能还想为包含的元素（通常为 <code>html</code>）添加 <code>is-clipped</code> 修饰符来阻止溢出滚动。  </p>
 </div>
 
 <div class="message is-info">
   <div class="message-header">
-    JavaScript implementation example
+    JavaScript 扩展示例
   </div>
   <div class="message-body">
-    Bulma does not include any JavaScript. However, this documentation provides a <a href="#javascript-implementation-example">JS implementation example</a> that you are free to use.
+    Bulma 不包含任何 JavaScript。但是，本文档提供了一个您可以自由使用的 <a href="#javascript-扩展示例">JS 扩展示例</a>。
   </div>
 </div>
 
-{% include elements/anchor.html name="Image modal" %}
+{% include elements/anchor.html name="图像模态框" %}
 
 <div class="content">
-  <p>Because a modal can contain <strong>anything you want</strong>, you can very simply use it to build an image gallery for example:</p>
+  <p>因为模态框可以放入<strong>任何您想放置的东西</strong>，所以您可以很容易的构建一个相册，例如：</p>
   <p>
-    <a class="button is-primary is-large modal-button" data-target="modal-bis">Launch image modal</a>
+    <a class="button is-primary is-large modal-button" data-target="modal-bis">加载图像模态框</a>
   </p>
 </div>
 
 {% highlight html %}{{ image_modal }}{% endhighlight %}
 
-{% include elements/anchor.html name="Modal card" %}
+{% include elements/anchor.html name="模态卡片" %}
 
 <div class="content">
-  <p>If you want a more classic modal, with a <strong>head</strong>, a <strong>body</strong> and a <strong>foot</strong>, use the <code>modal-card</code>.</p>
+  <p>如果您想要一个更传统的模态框——带有<strong>head</strong>、<strong>body</strong> 和 <strong>foot</strong>，可以使用 <code>modal-card</code>。</p>
   <p>
-    <button class="button is-primary is-large modal-button" data-target="modal-ter" aria-haspopup="true">Launch card modal</button>
+    <button class="button is-primary is-large modal-button" data-target="modal-ter" aria-haspopup="true">加载卡片模态框</button>
   </p>
 </div>
 
@@ -196,35 +194,35 @@ document.addEventListener('DOMContentLoaded', () => {
   {% highlight html %}{{ modal_card }}{% endhighlight %}
 </div>
 
-{% include elements/anchor.html name="JavaScript implementation example" %}
+{% include elements/anchor.html name="JavaScript 扩展示例" %}
 
 <div class="content">
   <p>
-    The Bulma package <strong>does not come with any JavaScript</strong>. Here is however an implementation example, which sets the <code>click</code> handlers for custom elements, in vanilla JavaScript.
+    Bulma 包<strong>没有任何 JavaScript</strong>。这是扩展示例，该示例基于 vanilla JavaScript 为定制元素设置了 <code>click</code> 抓手。
   </p>
 
   <p>
-    There are 3 parts to this implementation:
+    该扩展有 3 部分：
   </p>
 
   <ul>
     <li>
-      add the HTML for the <strong>modal</strong> (this modal is hidden by default)
+      为 <strong>modal</strong> 添加 HTML（此 modal 默认隐藏）
     </li>
     <li>
-      add the HTML for a button to <strong>trigger</strong> the modal (you can style this button however you want)
+      为 HTML 添加一个 button 做为 modal 的 <strong>trigger</strong>（您可以随意美化该 button）
     </li>
     <li>
-      add the JS code to add the <code>click</code> event on the <strong>trigger</strong> to open the <strong>modal</strong>
+      为 <strong>trigger</strong> 添加 JS 代码——添加 <code>click</code> 事件用于打开 <strong>modal</strong>
     </li>
   </ul>
 </div>
 
 <div class="content">
-  <h4>1. Add the HTML for the modal</h4>
+  <h4>1. 为 <strong>modal</strong> 添加 HTML</h4>
 
   <p>
-    At the end of your page, before the closing <code>&lt;/body&gt;</code> tag, at the following HTML snippet:
+    在页面最后，<code>&lt;/body&gt;</code> 标签关闭之前，填写下面的 HTML 片段：
   </p>
 </div>
 
@@ -232,15 +230,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="content">
   <p>
-    The <code>id</code> attribute's value must be <strong>unique</strong>.
+    <code>id</code> 属性值必须是 <strong>唯一</strong>的。
   </p>
 </div>
 
 <div class="content">
-  <h4>2. Add the HTML for the trigger</h4>
+  <h4>2. 添加 HTML 触发器（Trigger）</h4>
 
   <p>
-    Somewhere on your page, add the following HTML button:
+    在您的页面的某处，添加下面的 HTML button：
   </p>
 </div>
 
@@ -252,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="content">
   <p>
-    You can style it however you want, as long as it has the <code>js-modal-trigger</code> CSS class and the appropriate <code>data-target</code> value. For example, you can add the <code>button is-primary</code> Bulma classes:
+    您可以如您所愿的美化一下它，只要不改动 <code>js-modal-trigger</code> CSS 类和合适的 <code>data-target</code> 值即可。例如您可以添加 <code>button is-primary</code> 类：
   </p>
 </div>
 
@@ -261,10 +259,10 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <div class="content">
-  <h4>3. Add the JS for the trigger</h4>
+  <h4>3. 为触发器添加 JS</h4>
 
   <p>
-    In a <code>script</code> element (or in a seperate <code>.js</code> file), add the following JS code:
+    在一个 <code>script</code> 元素内（或者一个独立的 <code>.js</code> 文件），添加如下 JS 代码：
   </p>
 </div>
 
@@ -272,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="content">
   <p>
-    As long as you can toggle the <code>is-active</code> modifier class on the <code>modal</code> element, you can choose how you want to implement it.
+    只要您可以切换在 <code>modal</code> 元素上的 <code>is-active</code> 修饰符类，您就可以选择如何去实现它。
   </p>
 </div>
 

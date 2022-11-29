@@ -523,27 +523,27 @@
     },
     "components-card": {
       "name": "Card",
-      "subtitle": "An all-around flexible and composable component",
+      "subtitle": "一款全方位的灵活和可组合组件",
       "color": "success",
       "icon": "id-card",
       "path": "/documentation/components/card/"
     },
     "components-dropdown": {
       "name": "Dropdown",
-      "subtitle": "An interactive <strong>dropdown menu</strong> for discoverable content",
+      "subtitle": "一个用于发现内容的可互动<strong>下拉菜单（dropdown menu）</strong>",
       "color": "success",
       "icon": "angle-down",
       "path": "/documentation/components/dropdown/"
     },
     "components-menu": {
       "name": "Menu",
-      "subtitle": "A simple <strong>menu</strong>, for any type of vertical navigation",
+      "subtitle": "一个简单 <strong>menu</strong>，解决任何类型的竖向导航问题",
       "icon": "bars",
       "path": "/documentation/components/menu/"
     },
     "components-message": {
       "name": "Message",
-      "subtitle": "Colored <strong>message</strong> blocks, to emphasize part of your page",
+      "subtitle": "带有颜色的<strong>信息（message）</strong>块，在您的网页的会显的很突出",
       "color": "info",
       "icon": "window-maximize",
       "icon_regular": "true",
@@ -551,14 +551,14 @@
     },
     "components-modal": {
       "name": "Modal",
-      "subtitle": "A classic <strong>modal</strong> overlay, in which you can include <em>any</em> content you want",
+      "subtitle": "传统的覆盖父窗体的<strong>模态框（modal）</strong>——其内您可以放置您想放的<em>任何</em>内容",
       "color": "danger",
       "icon": "clone",
       "path": "/documentation/components/modal/"
     },
     "components-navbar": {
       "name": "Navbar",
-      "subtitle": "A responsive horizontal <strong>navbar</strong> that can support images, links, buttons, and dropdowns",
+      "subtitle": "一款自适应的横向<strong>导航条（navbar）</strong>——支持图像、链接、按钮和下拉菜单",
       "color": "primary",
       "icon": "minus",
       "path": "/documentation/components/navbar/"
