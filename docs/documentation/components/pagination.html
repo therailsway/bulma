@@ -1,5 +1,5 @@
 ---
-title: Pagination
+title: 分页导航（Pagination）
 layout: documentation
 doc-tab: components
 doc-subtab: pagination
@@ -160,26 +160,26 @@ meta:
 
 <div class="content">
   <p>
-    The pagination component consists of several elements:
+    分页组件包含：
   </p>
   <ul>
     <li>
-      <code>pagination-previous</code> and <code>pagination-next</code> for incremental navigation
+      <code>pagination-previous</code> 和 <code>pagination-next</code> 用于增量导航
     </li>
     <li>
-      <code>pagination-list</code> which displays page items:
+      <code>pagination-list</code> 显示页：
       <ul>
         <li>
-          <code>pagination-link</code> for the page numbers
+          <code>pagination-link</code> 是页码
         </li>
         <li>
-          <code>pagination-ellipsis</code> for range separators
+          <code>pagination-ellipsis</code> 是范围分隔符
         </li>
       </ul>
     </li>
   </ul>
   <p>
-    All elements are optional so you can compose your pagination as you wish.
+    所有元素可选，所以您可以随意组合。
   </p>
 </div>
 
@@ -187,7 +187,7 @@ meta:
 
 <div class="content">
   <p>
-    You can disable some links if they are not active, or change the amount of page numbers available.
+    您可以对非激活链接使其不可用，或者修改可用页码数目。
   </p>
 </div>
 
@@ -195,7 +195,7 @@ meta:
 
 <div class="content">
   <p>
-    By default on <strong>tablet</strong>, the list is located on the left, and the previous/next buttons on the right. But you can change the <strong>order</strong> of these elements by using the <code>is-centered</code> and <code>is-right</code> modifiers.
+    <strong>平板</strong>上默认数字列表在左侧，上页/下页按钮在右侧。您可以通过使用 <code>is-centered</code> 和 <code>is-right</code> 修饰符来修改这些元素的 <strong>顺序</strong>。
   </p>
 </div>
 
@@ -203,19 +203,19 @@ meta:
 
 {% include elements/snippet.html content=pagination_right_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Styles" %}
+{% include elements/anchor.html name="样式" %}
 
 <p class="content">
-  Add the <code>is-rounded</code> modifier to have rounded pagination items.
+  添加 <code>is-rounded</code> 修饰符使分页项变成圆角。
 </p>
 
 {% include elements/snippet.html content=pagination_rounded_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <p class="content">
-  The pagination comes in <strong>3 additional sizes</strong>.<br>
-  You only need to append the <strong>modifier</strong> <code>is-small</code>, <code>is-medium</code>, or <code>is-large</code> to the <code>pagination</code> component.
+  分页导航有 <strong>3 扩展型号</strong>。<br>
+  您只需追加<strong>修饰符</strong> <code>is-small</code>、<code>is-medium</code> 和 <code>is-large</code> 到 <code>pagination</code> 组件即可。
 </p>
 
 {% include elements/snippet.html content=pagination_small_example horizontal=true more=true %}

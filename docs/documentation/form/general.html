@@ -1,5 +1,5 @@
 ---
-title: Form controls
+title: 表单控件（Form controls）
 layout: documentation
 doc-tab: form
 doc-subtab: general
@@ -814,10 +814,10 @@ variables_keys:
 
 <div class="content">
   <p>
-    Bulma supports the following native <strong>HTML form elements</strong>: <code>&lt;form&gt;</code> <code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;textarea&gt;</code> and <code>&lt;label&gt;</code>.
+    Bulma 支持下列原生 <strong>HTML 表单元素</strong>： <code>&lt;form&gt;</code> <code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;textarea&gt;</code> 和 <code>&lt;label&gt;</code>.
   </p>
   <p>
-    The following CSS <strong>classes</strong> are supported:
+    下列 CSS <strong>类</strong>也是支持的：
   </p>
   <ul>
     <li><code>label</code></li>
@@ -833,37 +833,37 @@ variables_keys:
 
 <div class="content">
   <p>
-    To maintain an evenly balanced design, Bulma provides a very useful <code>control</code> container with which you can <strong>wrap</strong> the form controls.
+    要保持平衡均衡的设计，Bulma 提供了非常有用的 <code>control</code> 容器，使用它您可以<strong>包裹</strong> 表单控件。
     <br>
-    When combining several controls in a <strong>form</strong>, use the <code>field</code> class as a <strong>container</strong>, to keep the spacing consistent.
+    组合一些控件在一个<strong>表单</strong>里的时候，使用 <code>field</code> 类做为一个<strong>容器</strong>，来保持间距一致。
   </p>
 </div>
 
-{% include elements/anchor.html name="Complete form example" %}
+{% include elements/anchor.html name="完整表单示例" %}
 
 {% include elements/snippet.html content=example more=true %}
 
 <div class="content">
   <p>
-    For the best results using Bulma, it's recommended to use the <code>control</code> element as often as possible.
+    使用 Bulma 的最好结果，就是推荐尽可能多的使用 <code>control</code> 元素。
   </p>
 </div>
 
 {% include elements/anchor.html name="Form field" %}
 
 <div class="content">
-  <p>The <code>field</code> container is a simple container for:</p>
+  <p><code>field</code> 容器是一个简单的容器：</p>
   <ul>
-    <li>a text <code>label</code></li>
-    <li>a form <code>control</code></li>
-    <li>an optional <code>help</code>text</li>
+    <li>一个文本 <code>label</code></li>
+    <li>一个表单 <code>control</code></li>
+    <li>一个可选的 <code>help</code>文本</li>
   </ul>
 </div>
 
 {% include elements/snippet.html content=field_example %}
 
 <div class="content">
-  <p>This container allows form fields to be <strong>spaced consistently</strong>.</p>
+  <p>这个容器使表单字段<strong>间距一致</strong>。</p>
 </div>
 
 {% include elements/snippet.html content=fields_example %}
@@ -872,7 +872,7 @@ variables_keys:
 
 <div class="content">
   <p>
-    The Bulma <code>control</code> is a versatile <strong>block</strong> container meant to <strong>enhance single form controls</strong>. Because it has the same height as the element that it wraps, it can <strong class="has-text-danger">only contain</strong> the following Bulma elements:
+    Bulma 的 <code>control</code> 是一个多功能 <strong>block</strong> 容器，也就是说<strong>增强了单个表单控件</strong>。因为它跟它包裹的元素有相同的高度，它可以<strong class="has-text-danger">只包含</strong>下列 Bulma 元素：
   </p>
 
   <ul>
@@ -882,20 +882,20 @@ variables_keys:
     <li><code>icon</code></li>
   </ul>
   <p>
-    This container gives the ability to:
+    这个容器具备如下能力：
   </p>
   <ul>
     <li>
-      keep the <strong>spacing</strong> consistent
+      保持一致<strong>间距</strong>
     </li>
     <li>
-      combine form controls into a <strong>group</strong>
+      组合表单控件为一个<strong>组</strong>
     </li>
     <li>
-      combine form controls into a <strong>list</strong>
+      组合表单控件为一个<strong>列表</strong>
     </li>
     <li>
-      append and prepend <strong>icons</strong> to a form control
+      为一个表单控件附加或者前加<strong>图标</strong>
     </li>
   </ul>
 </div>
@@ -907,35 +907,35 @@ variables_keys:
 {% include elements/snippet.html content=control_button_example %}
 
 <!-- Font Awesome Icons -->
-{% include elements/anchor.html name="With icons" %}
+{% include elements/anchor.html name="带图标" %}
 
 <div class="content">
-  <p>You can append one of 2 <strong>modifiers</strong> on a control:</p>
+  <p>您可以法家两个<strong>修饰符</strong>之一到控件：</p>
   <ul>
     <li>
       <code>has-icons-left</code>
     </li>
     <li>
-      and/or <code>has-icons-right</code>
+      和/或 <code>has-icons-right</code>
     </li>
   </ul>
-  <p>You also need to add a modifier on the <strong>icon</strong>:</p>
+  <p>您还需要添加一个修饰符到<strong>图标</strong>：</p>
   <ul>
     <li>
-      <code>icon is-left</code> if <code>has-icons-left</code> is used
+      如果用的 <code>has-icons-left</code> 就是 <code>icon is-left</code>
     </li>
     <li>
-      <code>icon is-right</code> if <code>has-icons-right</code> is used
+      如果用的 <code>has-icons-right</code> 就是 <code>icon is-right</code>
     </li>
   </ul>
-  <p>The size of the <strong>input</strong> will define the size of the icon container.</p>
+  <p><strong>input</strong> 的型号会定义图标容器的型号。</p>
 </div>
 
 {% include elements/snippet.html content=icons_example clipped=true %}
 
 <div class="content">
   <p>
-    You can append icons to <strong>select dropdowns</strong> as well.
+    您也可以附加图标到<strong>下拉选择框</strong>上。
   </p>
 </div>
 
@@ -943,7 +943,7 @@ variables_keys:
 
 <div class="content">
   <p>
-    If the control contains an icon, Bulma will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
+    如果控件包含图标，Bulma 不管输入框大小<em>还是</em>图标大小都会确保图标保持<strong>居中</strong>。
   </p>
 </div>
 

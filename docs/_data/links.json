@@ -309,20 +309,20 @@
     },
     "layout": {
       "name": "布局",
-      "subtitle": "Design the <strong>structure</strong> of your webpage with these CSS classes",
+      "subtitle": "用 CSS 类设计您网页<strong>架构</strong>",
       "color": "success",
       "icon": "warehouse",
       "path": "/documentation/layout/"
     },
     "layout-container": {
       "name": "Container",
-      "subtitle": "A simple <strong>container</strong> to center your content horizontally",
+      "subtitle": "一个简单的 <strong>container</strong> 可以从说明方向居中您的内容",
       "path": "/documentation/layout/container/",
       "icon": "arrows-alt-h"
     },
     "layout-level": {
       "name": "Level",
-      "subtitle": "A multi-purpose <strong>horizontal level</strong>, which can contain almost any other element",
+      "subtitle": "一个多用途<strong>水平 level</strong>可包含几乎所有其它元素",
       "path": "/documentation/layout/level/",
       "icon": "ruler-horizontal"
     },
@@ -358,15 +358,15 @@
     },
     "form": {
       "name": "表单",
-      "subtitle": "The indispensable <strong>form controls</strong>, designed for maximum clarity",
+      "subtitle": "不可或缺的<strong>表单控件</strong>，用于最明确的表达设计",
       "color": "link",
       "icon_brand": "true",
       "icon": "wpforms",
       "path": "/documentation/form/"
     },
     "form-general": {
-      "name": "General",
-      "subtitle": "All generic <strong>form controls</strong>, designed for consistency",
+      "name": "通用",
+      "subtitle": "所有通用<strong>表单控件</strong>，都是基于一致性设计",
       "color": "link",
       "icon": "keyboard",
       "icon_regular": "true",
@@ -565,14 +565,14 @@
     },
     "components-pagination": {
       "name": "Pagination",
-      "subtitle": "A responsive, usable, and flexible <strong>pagination</strong>",
+      "subtitle": "一款自适应、实用的、具有弹性的<strong>分页导航（pagination）</strong>",
       "color": "orange",
       "icon": "caret-square-right",
       "path": "/documentation/components/pagination/"
     },
     "components-panel": {
       "name": "Panel",
-      "subtitle": "A composable <strong>panel</strong>, for compact controls",
+      "subtitle": "用于紧凑控制的组合<strong>面板（Panel）</strong>",
       "color": "grey-dark",
       "icon": "list-alt",
       "icon_regular": "true",
@@ -580,7 +580,7 @@
     },
     "components-tabs": {
       "name": "Tabs",
-      "subtitle": "Simple responsive horizontal navigation <strong>tabs</strong>, with different styles",
+      "subtitle": "简单的带有不同样式的自适应水平导航<strong>选项卡（Tabs）</strong>",
       "color": "purple",
       "icon": "folder",
       "path": "/documentation/components/tabs/"

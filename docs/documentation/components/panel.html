@@ -1,5 +1,5 @@
 ---
-title: Panel
+title: 面板（Panel）
 layout: documentation
 doc-tab: components
 doc-subtab: panel
@@ -84,17 +84,17 @@ meta:
 
 <div class="content">
   <p>
-    The <code>panel</code> is a container for several types:
+    <code>panel</code> 是容器：
   </p>
   <ul>
     <li>
-      <code>panel-heading</code> as the first child
+      <code>panel-heading</code> 是第一个子元素
     </li>
     <li>
-      <code>panel-tabs</code> for navigation
+      <code>panel-tabs</code> 用于导航
     </li>
     <li>
-      <code>panel-block</code> which can contain other elements, like:
+      <code>panel-block</code> 可包含其他元素：
       <ul>
         <li><code>control</code></li>
         <li><code>input</code></li>
@@ -104,20 +104,20 @@ meta:
     </li>
   </ul>
   <p>
-    The <code>panel-block</code> can be an anchor tag <code>&lt;a&gt;</code> or a label <code>&lt;label&gt;</code> with a checkbox inside.
+    <code>panel-block</code> 可以是锚点标签 <code>&lt;a&gt;</code> 或者带有内置选择框的标签 <code>&lt;label&gt;</code>。
   </p>
 </div>
 
 {% include elements/snippet.html content=panel_example more=true %}
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    The panel component is available in all the <strong>different colors</strong> defined by the <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a>.     Simply append one of the color modifiers.
+    面板组件可用所有 <a href="{{ site.data.links.by_id.customize-variables.path }}"><code>$colors</code> Sass map</a> 中定义的<strong>各种颜色</strong>。只需追加颜色修饰符即可。
   </p>
   <p>
-    For example, to use your primary color, use <code>"panel is-primary"</code> as a class.
+    例如，使用基础颜色，添加 <code>"panel is-primary"</code> 修饰符类。
   </p>
 </div>
 

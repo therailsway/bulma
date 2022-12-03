@@ -1,5 +1,5 @@
 ---
-title: Tabs
+title: 选项卡（Tabs）
 layout: documentation
 doc-tab: components
 doc-subtab: tabs
@@ -355,34 +355,34 @@ meta:
 
 <div class="content">
   <p>
-    The Bulma <code>tabs</code> are a straightforward navigation component that come in a variety of versions. They only require the following structure:
+    Bulma 的 <code>tabs</code> 是一个简单的有多种版本的导航组件。它们通常需要下列构件：
   </p>
   <ul>
     <li>
-      a <code>tabs</code> container
+      一个 <code>tabs</code> 容器
     </li>
     <li>
-      a <code>&lt;ul&gt;</code> HTML element
+      一个 <code>&lt;ul&gt;</code> HTML 元素
     </li>
     <li>
-      a list of <code>&lt;li&gt;</code> HTML element
+      一个 <code>&lt;li&gt;</code> HTML 元素列表
     </li>
     <li>
-      <code>&lt;a&gt;</code> HTML anchor elements for each link
+      面向每个链接的 <code>&lt;a&gt;</code> HTML 锚点元素
     </li>
   </ul>
   <p>
-    The <strong>default</strong> tabs style has a single border at the bottom.
+    <strong>默认</strong> tabs 样式在底部有一个单边框。
   </p>
 </div>
 
 {% include elements/snippet.html content=tabs_example horizontal=true %}
 
-{% include elements/anchor.html name="Alignment" %}
+{% include elements/anchor.html name="对齐方式" %}
 
 <div class="content">
   <p>
-    To align the tabs list, use the <code>is-centered</code> or <code>is-right</code> modifier on the <code>.tabs</code> container:
+    对齐 tabs 列表，在 <code>.tabs</code> 容器上添加 <code>is-centered</code> 或者 <code>is-right</code> 修饰符：
   </p>
 </div>
 
@@ -390,17 +390,17 @@ meta:
 
 {% include elements/snippet.html content=tabs_right_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Icons" %}
+{% include elements/anchor.html name="图标" %}
 
 <div class="content">
-  <p>You can use any of the <a href="https://fontawesome.com/">Font Awesome</a> <strong>icons</strong>.</p>
+  <p>您可以使用任何 <a href="https://fontawesome.com/">Font Awesome</a> <strong>图标</strong>。</p>
 </div>
 
 {% include elements/snippet.html content=tabs_icons_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 <div class="content">
-  <p>You can choose between <strong>3 additional sizes</strong>: <code>is-small</code> <code>is-medium</code> and <code>is-large</code>.</p>
+  <p>您可选择 <strong>3 个扩展型号</strong>之一：<code>is-small</code> <code>is-medium</code> 和 <code>is-large</code>。</p>
 </div>
 
 {% include elements/snippet.html content=tabs_small_example horizontal=true more=true %}
@@ -409,36 +409,36 @@ meta:
 
 {% include elements/snippet.html content=tabs_large_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Styles" %}
+{% include elements/anchor.html name="样式" %}
 
 <div class="content">
-  If you want a more classic style with <strong>borders</strong>, just append the <code>is-boxed</code> modifier.
+  如果您想要带<strong>边框</strong>的经典样式，只需添加 <code>is-boxed</code> 修饰符即可。
 </div>
 
 {% include elements/snippet.html content=tabs_boxed_example horizontal=true more=true %}
 
 <p class="content">
-  If you want <strong>mutually exclusive</strong> tabs (like radio buttons where clicking one deselects all other ones), use the <code>is-toggle</code> modifier.
+  如果您想要<strong>互斥</strong>效果的 tabs（像单选按钮一样，点击一个会取消所有其他按钮），只需使用 <code>is-toggle</code> 修饰符即可。
 </p>
 
 {% include elements/snippet.html content=tabs_toggle_example horizontal=true more=true %}
 
 <p class="content">
-  If you use both <code>is-toggle</code> and <code>is-toggle-rounded</code>, the first and last items will be <strong>rounded</strong>.
+  如果您既使用了 <code>is-toggle</code> 又使用了 <code>is-toggle-rounded</code>，那么第一个和最后一个项目会是<strong>圆角</strong>。
 </p>
 
 {% include elements/snippet.html content=tabs_toggle_rounded_example horizontal=true more=true %}
 
 <p class="content">
-  If you want the tabs to take up the <strong>whole width</strong> available, use <code>is-fullwidth</code>.
+  如果您想让 tabs 占用<strong>整个宽度</strong>，使用 <code>is-fullwidth</code>。
 </p>
 
 {% include elements/snippet.html content=tabs_fullwidth_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Combining" %}
+{% include elements/anchor.html name="组合" %}
 
 <div class="content">
-  <p>You can <strong>combine</strong> different modifiers. For example, you can have <strong>centered boxed</strong> tabs, or <strong>fullwidth toggle</strong> ones.</p>
+  <p>您可以<strong>组合</strong>使用不同的修饰符。例如，您可以使用<strong>居中带边框</strong>的 tabs，或者<strong>全宽度可切换</strong> tabs。</p>
 </div>
 
 {% include elements/snippet.html content=tabs_centered_boxed_example horizontal=true more=true %}
