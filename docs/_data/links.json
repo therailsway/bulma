@@ -373,8 +373,8 @@
       "path": "/documentation/form/general/"
     },
     "form-input": {
-      "name": "Input",
-      "subtitle": "The <strong>text input</strong> and its variations",
+      "name": "输入框",
+      "subtitle": "<strong>文本输入框</strong>和它的变体",
       "color": "link",
       "icon": "minus",
       "path": "/documentation/form/input/"

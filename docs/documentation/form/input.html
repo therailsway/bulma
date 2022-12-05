@@ -1,8 +1,8 @@
 ---
-title: Input
+title: 输入框（Input）
 layout: documentation
-doc-tab: form
-doc-subtab: input
+doc-tab: 表单
+doc-subtab: 输入框
 breadcrumb:
 - home
 - documentation
@@ -199,7 +199,7 @@ meta:
 
 <div class="content">
   <p>
-    The Bulma <code>input</code> CSS class is meant for <code>&lt;input&gt;</code> HTML elements. The following <a href="http://htmlreference.io/element/input/" target="_blank">type attributes</a> are supported:
+    Bulma 的 <code>input</code> CSS 类是针对 HTML 元素 <code>&lt;input&gt;</code> 的，支持下列<a href="http://htmlreference.io/element/input/" target="_blank">类型属性</a>：
   </p>
   <ul>
     <li><code>type="text"</code></li>
@@ -208,12 +208,12 @@ meta:
     <li><code>type="tel"</code></li>
   </ul>
   <p>
-   Several <strong>modifiers</strong> are supported which affect:
+   支持的<strong>修饰符</strong>可能影响：
   </p>
   <ul>
-    <li>the <strong><a href="#colors">color</a></strong></li>
-    <li>the <strong><a href="#sizes">size</a></strong></li>
-    <li>the <strong><a href="#states">state</a></strong></li>
+    <li><strong><a href="#colors">颜色</a></strong></li>
+    <li><strong><a href="#sizes">型号</a></strong></li>
+    <li><strong><a href="#states">状态</a></strong></li>
   </ul>
 </div>
 
@@ -226,7 +226,7 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 {% for color in site.data.colors.justColors %}
 {% capture foobar %}
@@ -235,7 +235,7 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 {% for size in site.data.sizes %}
 {% capture foobar %}
@@ -244,7 +244,7 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Styles" %}
+{% include elements/anchor.html name="样式" %}
 
 <div class="columns">
   <div class="column is-half">
@@ -255,9 +255,9 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="States" %}
+{% include elements/anchor.html name="状态" %}
 
-<h4 class="title is-5">Normal</h4>
+<h4 class="title is-5">普通</h4>
 
 <div class="columns">
   <div class="column is-half">
@@ -268,7 +268,7 @@ meta:
   </div>
 </div>
 
-<h4 class="title is-5">Hover</h4>
+<h4 class="title is-5">悬停</h4>
 
 <div class="columns">
   <div class="column is-half">
@@ -279,7 +279,7 @@ meta:
   </div>
 </div>
 
-<h4 class="title is-5">Focus</h4>
+<h4 class="title is-5">聚焦</h4>
 
 <div class="columns">
   <div class="column is-half">
@@ -290,7 +290,7 @@ meta:
   </div>
 </div>
 
-<h4 class="title is-5">Loading</h4>
+<h4 class="title is-5">加载中</h4>
 
 <div class="columns">
   <div class="column is-half">
@@ -305,7 +305,7 @@ meta:
   <div class="column is-half">
     <div class="content">
       <p>
-        You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
+        您可以通过在 <code>control</code> 容器上添加 <code>is-small</code>、<code>is-medium</code> 或者 <code>is-large</code> 来重置加载旋钮的大小。
       </p>
     </div>
     {{loading_sizes_example}}
@@ -315,7 +315,7 @@ meta:
   </div>
 </div>
 
-<h4 class="title is-5">Disabled</h4>
+<h4 class="title is-5">禁用</h4>
 
 
 <div class="columns">
@@ -332,8 +332,7 @@ meta:
 
 <div class="content">
   <p>
-    If you use the <code>readonly</code> HTML attribute, the input will look similar to a normal one, but is not editable and has no shadow.
-  </p>
+    如果您使用 <code>readonly</code> HTML 属性，输入框看起来也没什么变化，但是却不能编辑和没有阴影了。  </p>
 </div>
 <div class="columns">
   <div class="column is-half">
@@ -346,7 +345,7 @@ meta:
 
 <div class="content">
   <p>
-    If you <em>also</em> append the <code>is-static</code> modifier, it removes the background, border, shadow, and horizontal padding, while maintaining the <strong>vertical spacing</strong> so you can easily align the input in any context, like a horizontal form.
+    如果您<em>还</em>添加了 <code>is-static</code> 修饰符，背景、边框、阴影和水平内边距将移除，<strong>垂直间距</strong>还保留，所以您很容易对齐输入框，就像使用其他水平表单一样。
   </p>
 </div>
 
@@ -356,28 +355,28 @@ meta:
 {% highlight html %}{{ static_example }}{% endhighlight %}
 
 <!-- Font Awesome Icons -->
-{% include elements/anchor.html name="With Font Awesome icons" %}
+{% include elements/anchor.html name="使用 Font Awesome 图标" %}
 
 <div class="content">
-  <p>You can append one of 2 <strong>modifiers</strong> on a control:</p>
+  <p>您可以在控件上添加两个<strong>修饰符</strong>之一：</p>
   <ul>
     <li>
       <code>has-icons-left</code>
     </li>
     <li>
-      and/or <code>has-icons-right</code>
+      和/或 <code>has-icons-right</code>
     </li>
   </ul>
-  <p>You also need to add a modifier on the <strong>icon</strong>:</p>
+  <p>您还需要添加一个修饰符在 <strong>icon</strong>上：</p>
   <ul>
     <li>
-      <code>icon is-left</code> if <code>has-icons-left</code> is used
+      如果用 <code>has-icons-left</code> 就是 <code>icon is-left</code>
     </li>
     <li>
-      <code>icon is-right</code> if <code>has-icons-right</code> is used
+      如果用 <code>has-icons-right</code> 就是 <code>icon is-right</code>
     </li>
   </ul>
-  <p>The size of the <strong>input</strong> will define the size of the icon container.</p>
+  <p><strong>输入框</strong>的型号就是图标容器的型号。</p>
 </div>
 <div class="columns">
   <div class="column is-half">
@@ -392,7 +391,7 @@ meta:
   <div class="column is-half">
     <div class="content">
       <p>
-        If the control contains an icon, Bulma will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
+        如果控件包含图标，Bulma 不论输入框<em>或</em>图标的型号的大小，都会确保图标<strong>居中</strong>。
       </p>
     </div>
     {{has_icons_small_example}}
