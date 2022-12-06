@@ -1,8 +1,8 @@
 ---
-title: Textarea
+title: 文本区（Textarea）
 layout: documentation
-doc-tab: form
-doc-subtab: textarea
+doc-tab: 表单
+doc-subtab: 文本区
 breadcrumb:
 - home
 - documentation
@@ -134,7 +134,7 @@ meta:
 
 <div class="content">
   <p>
-    The Bulma <code>textarea</code> CSS class is the multiline version of the <a href="{{ site.data.links.by_id.form-input.path }}"><code>input</code> element</a>:
+    Bulma 的 <code>textarea</code> CSS 类就是 <a href="{{ site.data.links.by_id.form-input.path }}"><code>input</code> 元素</a>的多行版本：
   </p>
 </div>
 
@@ -148,17 +148,17 @@ meta:
 
 <div class="content">
   <p>
-    You can set the height of the textarea using the <code>rows</code> HTML attribute.
+    您可以用 <code>rows</code> HTML 属性设定文本区高度。
   </p>
 </div>
 
 {% include elements/snippet.html content=textarea_rows_example %}
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    The <code>textarea</code> element is available in several colors:
+    <code>textarea</code> 元素可用颜色：
   </p>
 </div>
 
@@ -169,51 +169,51 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    The <code>textarea</code> element comes in <strong>4 different sizes:</strong>
+    <code>textarea</code> 元素有 <strong>4 种不同型号</strong>：
   </p>
 </div>
 
 {% include elements/snippet.html content=sizes_example %}
 
-{% include elements/anchor.html name="States" %}
+{% include elements/anchor.html name="状态" %}
 
 <div class="content">
   <p>
-    Bulma styles the different <strong>states</strong> of the <code>textarea</code> element. Each state is available as a pseudo-class and a CSS class:
+    Bulma 为 <code>textarea</code> 元素定制了不同的<strong>状态</strong>。每一种状态可用伪类和 CSS 类设置：
   </p>
   <ul>
     <li>
-      <code>:hover</code> and <code>is-hovered</code>
+      <code>:hover</code> 和 <code>is-hovered</code>
     </li>
     <li>
-      <code>:focus</code> and <code>is-focused</code>
+      <code>:focus</code> 和 <code>is-focused</code>
     </li>
     <li>
-      <code>:active</code> and <code>is-active</code>
+      <code>:active</code> 和 <code>is-active</code>
     </li>
   </ul>
   <p>
-    This allows you to obtain the style of a certain state without having to trigger it.
+    这使得您可以不需要触发而获得特定状态。
   </p>
 </div>
 
-<h4 class="subtitle">Normal</h4>
+<h4 class="subtitle">普通</h4>
 
 {% include elements/snippet.html content=normal_example %}
 
-<h4 class="subtitle">Hover</h4>
+<h4 class="subtitle">悬停</h4>
 
 {% include elements/snippet.html content=hover_example %}
 
-<h4 class="subtitle">Focus</h4>
+<h4 class="subtitle">聚焦</h4>
 
 {% include elements/snippet.html content=focus_example %}
 
-<h4 class="subtitle">Loading</h4>
+<h4 class="subtitle">加载中</h4>
 
 {% include elements/snippet.html content=loading_example %}
 
@@ -221,7 +221,7 @@ meta:
   <div class="column is-half">
     <div class="content">
       <p>
-        You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
+        您可以通过在 <code>control</code> 容器上添加 <code>is-small</code>、<code>is-medium</code> 或 <code>is-large</code> 修饰符来设定加载旋钮的大小。
       </p>
     </div>
     {{loading_sizes_example}}
@@ -231,25 +231,25 @@ meta:
   </div>
 </div>
 
-<h4 class="subtitle">Disabled</h4>
+<h4 class="subtitle">禁用</h4>
 
 {% include elements/snippet.html content=disabled_example %}
 
-<h4 class="subtitle">Readonly</h4>
+<h4 class="subtitle">只读</h4>
 
 <div class="content">
   <p>
-    If you use the <code>readonly</code> HTML attribute, the textarea will look similar to a normal one, but is not editable and has no shadow.
+    如果您用 <code>readonly</code> HTML 属性，文本区将看起来除了不可编辑和没有阴影外跟普通文本区没什么区别。
   </p>
 </div>
 
 {% include elements/snippet.html content=readonly_example %}
 
-<h4 class="subtitle">Fixed Size</h4>
+<h4 class="subtitle">固定大小</h4>
 
 <div class="content">
   <p>
-    You can disable a <code>textarea</code> resizing by appending the <code>has-fixed-size</code> modifier:
+    您可以通过添加 <code>has-fixed-size</code> 修饰符禁用 <code>textarea</code> 重置大小功能：
   </p>
 </div>
 

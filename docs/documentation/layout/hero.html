@@ -1,11 +1,11 @@
 ---
-title: Hero
+title: 大横幅（Hero）
 layout: documentation
 fullwidth: true
 hide_categories: true
 hide_fortyfour: true
-doc-tab: layout
-doc-subtab: hero
+doc-tab: 布局
+doc-subtab: 大横幅
 breadcrumb:
 - home
 - documentation
@@ -19,23 +19,23 @@ meta:
 
 <div class="content">
   <p>
-    The hero component allows you to add a <strong>full width banner</strong> to your webpage, which can optionally cover the full height of the page as well.
+    大横幅组件允许您为网页添加<strong>全宽度横幅</strong>——也可以占满页面高度。
   </p>
   <p>
-    The basic requirement of this component are:
+    该组件基本需求是：
   </p>
   <ul>
     <li>
-      <code>hero</code> as the main container
+      <code>hero</code> 是主容器
       <ul>
         <li>
-          <code>hero-body</code> as a direct child, in which you can put all your content
+          <code>hero-body</code> 是可放置所有内容的直接子级
         </li>
       </ul>
     </li>
   </ul>
   <p>
-    For the <a href="#fullheight-hero">fullheight hero</a> to work, you will also need a <code>hero-head</code> and a <code>hero-foot</code>.
+    如果想使用<a href="#fullheight-hero">全高度横幅</a>，您需要一个 <code>hero-head</code> 和一个 <code>hero-foot</code>。
   </p>
 </div>
 
@@ -54,10 +54,10 @@ meta:
 
 {% include elements/snippet.html content=hero_example horizontal=true fullwidth=true %}
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
-  As with buttons, you can choose one of the <strong>8 different colors</strong>:
+  如同按钮一样，您可以选择 <strong>8 不同颜色</strong>之一：
 </div>
 
 {% for color in site.data.colors.justColors %}
@@ -78,11 +78,11 @@ meta:
 
 <!--  -->
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    You can have even more imposing banners by using one of <strong>5 different sizes</strong>:
+    您通过使用 <strong>5 种不同型号</strong>之一可能会获得非同凡响的效果：
   </p>
   <ul>
     <li><code>is-small</code></li>
@@ -177,11 +177,11 @@ meta:
 {% include elements/snippet.html content=fullheight_example horizontal=true fullwidth=true %}
 
 <!-- Fullheight with navbar -->
-{% include elements/anchor.html name="Fullheight with navbar" %}
+{% include elements/anchor.html name="带导航条的全高度横幅" %}
 
 <div class="content">
   <p>
-    If you are using a <a href="{{ site.url }}/documentation/components/navbar/#fixed-navbar">fixed navbar</a>, you can use the <code>is-fullheight-with-navbar</code> modifier on the hero for it to occupy the viewport height minus the navbar height.
+    如果您使用<a href="{{ site.url }}/documentation/components/navbar/#fixed-navbar">固定导航条</a>，您在横幅上可以使用 <code>is-fullheight-with-navbar</code> 修饰符，这样您就可以让横幅占据的高度为整个高度减调导航条的高度。
   </p>
 </div>
 
@@ -201,17 +201,17 @@ meta:
 {% include elements/snippet.html content=fullheight_with_navbar_example horizontal=true fullwidth=true %}
 
 <!-- Fullheight with 3 parts -->
-{% include elements/anchor.html name="Fullheight hero in 3 parts" %}
+{% include elements/anchor.html name="全高度横幅的 3 部分" %}
 
 <div class="content">
-  <p>To obtain a hero that will cover the whole height of the viewport, you can split it in <strong>3 vertical parts</strong>:</p>
+  <p>覆盖整个视口高度的横幅可以分为 <strong>3 垂直部分</strong>：</p>
   <ul>
     <li>
       <code>hero</code>
       <ul>
-        <li><code>hero-head</code> (always at the top)</li>
-        <li><code>hero-body</code> (always vertically centered)</li>
-        <li><code>hero-foot</code> (always at the bottom)</li>
+        <li><code>hero-head</code>（总在顶部）</li>
+        <li><code>hero-body</code>（总在垂直中间部分）</li>
+        <li><code>hero-foot</code>（总在底部）</li>
       </ul>
     </li>
   </ul>

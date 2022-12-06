@@ -1,8 +1,8 @@
 ---
-title: File upload
+title: 文件上传（File upload）
 layout: documentation
-doc-tab: form
-doc-subtab: file
+doc-tab: 表单
+doc-subtab: 文件上传
 breadcrumb:
 - home
 - documentation
@@ -276,31 +276,31 @@ meta:
 
 <div class="content">
   <p>
-    The <code>file</code> element is a simple <strong>interactive label</strong> that wraps an <code>&lt;input type="file"&gt;</code>. It comprises several sub-elements:
+    <code>file</code> 元素是封装了 <code>&lt;input type="file"&gt;</code> 的简单的<strong>互动标签</strong>。它包含几个子元素：
   </p>
   <ul>
     <li>
-      <code>file</code> the main <strong>container</strong>
+      <code>file</code> 是主<strong>容器</strong>
       <ul>
         <li>
-          <code>file-label</code> the actual <strong>interactive</strong> and clickable part of the element
+          <code>file-label</code> 是实际<strong>互动</strong>和可点击的元素
           <ul>
             <li>
-              <code>file-input</code> the <strong>native</strong> file input, hidden for styling purposes
+              <code>file-input</code> 是<strong>原生的</strong>文件输入框，基于美化目的已隐藏
             </li>
             <li>
-              <code>file-cta</code> the upload <strong>call-to-action</strong>
+              <code>file-cta</code> 上传<strong>调用操作</strong>
               <ul>
                 <li>
-                  <code>file-icon</code> an optional <strong>upload</strong> icon
+                  <code>file-icon</code> 是可选的<strong>上传</strong>图标
                 </li>
                 <li>
-                  <code>file-label</code> the "Choose a file…" text
+                  <code>file-label</code> 显示文字“选择一个文件……”
                 </li>
               </ul>
             </li>
             <li>
-              <code>file-name</code> a container for the <strong>chosen file</strong> name
+              <code>file-name</code> 一个包含<strong>选择的文件</strong>名字的容器
             </li>
           </ul>
         </li>
@@ -317,7 +317,7 @@ meta:
   <div class="column is-6">
     <div class="content">
       <p>
-        With the <code>has-name</code> modifier combined with the <code>file-name</code> element, you can add a <strong>placeholder</strong> for the selected file name.
+        联合使用 <code>has-name</code> 修饰符和 <code>file-name</code> 元素，您可以为选择的文件名添加一个<strong>占位符</strong>。
       </p>
     </div>
     <div class="bd-example">
@@ -333,7 +333,7 @@ meta:
   <div class="column is-6">
     <div class="content">
       <p>
-        You can move the CTA to the <strong>right side</strong> with the <code>is-right</code> modifier.
+        您可以使用 <code>is-right</code> 修饰符将 CTA 移动到<strong>右侧</strong>。
       </p>
     </div>
     <div class="bd-example">
@@ -349,7 +349,7 @@ meta:
   <div class="column is-6">
     <div class="content">
       <p>
-        You can also <strong>expand</strong> the name to fill up the space with the <code>is-fullwidth</code> modifier.
+        也可以用 <code>is-fullwidth</code> 修饰符<strong>扩展</strong>名字占满全部宽度。
       </p>
     </div>
     <div class="bd-example">
@@ -365,7 +365,7 @@ meta:
   <div class="column is-6">
     <div class="content">
       <p>
-        You can have a <strong>boxed block</strong> with the <code>is-boxed</code> modifier.
+        您还可以用 <code>is-boxed</code> 修饰符得到一个<strong>盒状块</strong>。
       </p>
     </div>
     <div class="bd-example">
@@ -381,7 +381,7 @@ meta:
   <div class="column is-6">
     <div class="content">
       <p>
-        You can <strong>combine</strong> <code>has-name</code> and <code>is-boxed</code>.
+        也可以<strong>联合</strong>使用 <code>has-name</code> 和 <code>is-boxed</code>。
       </p>
     </div>
     <div class="bd-example">
@@ -393,11 +393,11 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 <div class="content">
   <p>
-    You can style the file element by appending one of the <strong>{{ site.data.colors.derived | size }} color modifiers</strong>:
+    您可以通过添加一个 <strong>{{ site.data.colors.derived | size }} 颜色修饰符</strong>之一美化文件上传元素：
   </p>
   <ul>
     {% for color in site.data.colors.derived %}
@@ -413,18 +413,18 @@ meta:
 {% include elements/snippet.html content=file_colors_c %}
 {% include elements/snippet.html content=file_colors_d %}
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    You can append one of the <strong>4 available sizes</strong>:
+    您可以附加 <strong>4 个可用型号</strong>之一：
   </p>
   <ul>
     <li>
       <code>is-small</code>
     </li>
     <li>
-      <code>is-normal</code> (default)
+      <code>is-normal</code> （默认）
     </li>
     <li>
       <code>is-medium</code>
@@ -517,18 +517,18 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Alignment" %}
+{% include elements/anchor.html name="对齐方式" %}
 
 <div class="content">
   <p>
-    You can <strong>align</strong> the file input:
+    您可以<strong>对齐</strong>文件上传输入框：
   </p>
   <ul>
     <li>
-      to the <strong>center</strong> with the <code>is-centered</code> modifier
+      用 <code>is-centered</code> 修饰符<strong>居中</strong>对齐
     </li>
     <li>
-      to the <strong>right</strong> with the <code>is-right</code> modifier
+      用 <code>is-right</code> 修饰符向<strong>右</strong>对齐
     </li>
   </ul>
 </div>
@@ -541,8 +541,8 @@ meta:
 
 <div class="content">
   <p>
-    A file upload input requires JavaScript to <strong>retrieve</strong> the <strong>selected file name</strong>.
-    Here is an example of how this could be done:
+    文件上传输入框需要 JavaScript 来<strong>获取</strong><strong>选择的文件名</strong>。
+    这是一个演示如何运行的示例：
   </p>
 </div>
 

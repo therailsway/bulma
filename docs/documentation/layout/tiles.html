@@ -1,8 +1,8 @@
 ---
-title: Tiles powered by Flexbox
+title: 基于 Flexbox 构建的 Tile
 layout: documentation
-doc-tab: layout
-doc-subtab: tiles
+doc-tab: 布局
+doc-subtab: 贴片
 breadcrumb:
 - home
 - documentation
@@ -435,12 +435,12 @@ tile is-ancestor
 {% endcapture %}
 
 <div class="content">
-  <p>To build intricate 2-dimensional layouts, you only need a <strong>single element</strong>: the <code>tile</code>:</p>
+  <p>构建一个复杂的二维布局，您只需要一个<strong>单独的元素</strong>——<code>tile</code>：</p>
 </div>
 
 {% highlight html %}{{ tile_empty }}{% endhighlight %}
 
-{% include elements/anchor.html name="Example" %}
+{% include elements/anchor.html name="示例" %}
 
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-8">
@@ -492,13 +492,13 @@ tile is-ancestor
 
 {% highlight html %}{{ tile_default }}{% endhighlight %}
 
-{% include elements/anchor.html name="Modifiers" %}
+{% include elements/anchor.html name="修饰符" %}
 
 <div class="content">
-  <p>The <code>tile</code> element has <strong>16 modifiers</strong>:</p>
+  <p><code>tile</code> 元素有 <strong>16 个修饰符</strong>：</p>
   <ul>
     <li>
-      <strong>3 contextual</strong> modifiers
+      <strong>3 个上下文相关的</strong>修饰符
       <ul>
         <li><code>is-ancestor</code></li>
         <li><code>is-parent</code></li>
@@ -506,13 +506,13 @@ tile is-ancestor
       </ul>
     </li>
     <li>
-      <strong>1 directional</strong> modifier
+      <strong>1 个方向相关</strong>修饰符
       <ul>
         <li><code>is-vertical</code></li>
       </ul>
     </li>
     <li>
-      <strong>12 horizontal size</strong> modifiers
+      <strong>12 个横向型号</strong>修饰符
       <ul>
         <li>from <code>is-1</code></li>
         <li>to <code>is-12</code></li>
@@ -521,15 +521,15 @@ tile is-ancestor
   </ul>
 </div>
 
-{% include elements/anchor.html name="How it works: Nesting" %}
+{% include elements/anchor.html name="它如何运作：嵌套" %}
 
 <div class="content">
-  <p>Everything is a tile! To create a grid of tiles, you only need to <strong>nest</strong> <code>tile</code> elements.</p>
+  <p>万物皆贴片！创建一个贴片网格，您只需要<strong>嵌套</strong> <code>tile</code> 元素。</p>
 </div>
 
 <div class="columns">
   <div class="column is-one-third">
-    <p>Start with an <strong>ancestor</strong> tile that will wrap all other tiles:</p>
+    <p>用一个封装所以其他贴片的 <strong>ancestor</strong> 贴片开始：</p>
   </div>
   <div class="column is-two-thirds">
     {% highlight html %}{{ tile_ancestor }}{% endhighlight %}
@@ -538,7 +538,7 @@ tile is-ancestor
 
 <div class="columns">
   <div class="column is-one-third">
-    <p>Add tile elements that will distribute themselves <strong>horizontally</strong>:</p>
+    <p>添加<strong>水平</strong>分布的贴片元素：</p>
   </div>
   <div class="column is-two-thirds">
     {% highlight html %}{{ tile_horizontal }}{% endhighlight %}
@@ -548,9 +548,9 @@ tile is-ancestor
 <div class="columns">
   <div class="column is-one-third">
     <p>
-      You can <strong>resize</strong> any tile according to a <strong>12 column</strong> grid.
+      您可以根据 <strong>12 列</strong>网格<strong>重新规划</strong>任何贴片。
       <br>
-      For example, <code>is-4</code> will take up 1/3 of the horizontal space:
+      例如，<code>is-4</code> 会占用水平空间的 1/3 位置：
     </p>
   </div>
   <div class="column is-two-thirds">
@@ -560,7 +560,7 @@ tile is-ancestor
 
 <div class="columns">
   <div class="column is-one-third">
-    <p>If you want to stack tiles <strong>vertically</strong>, add <code>is-vertical</code> on the parent tile:</p>
+    <p>如果您想要<strong>垂直</strong>方向堆叠贴片，在其上级贴片上添加 <code>is-vertical</code> 修饰符：</p>
   </div>
   <div class="column is-two-thirds">
     {% highlight html %}{{ tile_vertical }}{% endhighlight %}
@@ -570,11 +570,11 @@ tile is-ancestor
 <div class="columns">
   <div class="column is-one-third">
     <div class="content">
-      <p>As soon as you want to add <strong>content</strong> to a tile, just:</p>
+      <p>如果您想为某一个贴片添加<strong>内容</strong>，只需：</p>
       <ul>
-        <li>add <em>any</em> class you want, like <code>box</code></li>
-        <li>add the <code>is-child</code> modifier on the tile</li>
-        <li>add the <code>is-parent</code> modifier on the <em>parent</em> tile</li>
+        <li>如愿添加<em>任意</em>类，例如 <code>box</code></li>
+        <li>在贴片上添加 <code>is-child</code> 修饰符</li>
+        <li>在<em>上级</em>贴片上添加 <code>is-parent</code> 修饰符</li>
       </ul>
     </div>
   </div>
@@ -606,15 +606,15 @@ tile is-ancestor
 
 {% highlight html %}{{ tile_lorem }}{% endhighlight %}
 
-{% include elements/anchor.html name="Nesting requirements" %}
+{% include elements/anchor.html name="嵌套需要" %}
 
 <article class="message is-danger">
   <div class="message-header">
-    3 levels deep at least...
+    至少 3 层深……
   </div>
   <div class="message-body">
     <div class="content">
-      <p>You need at least <strong>3 levels</strong> of hierarchy:</p>
+      <p>您需要至少 <strong>3 层</strong> 继承：</p>
       {% highlight markdown %}{{ md_3_levels }}{% endhighlight %}
     </div>
   </div>
@@ -622,11 +622,11 @@ tile is-ancestor
 
 <article class="message is-success">
   <div class="message-header">
-    ...but more levels if you want!
+    ……但是如果您需要更多层！
   </div>
   <div class="message-body">
     <div class="content">
-      <p>You can, however, nest tiles deeper than that, and mix it up!</p>
+      <p>您可以嵌入更多层贴片，然后，将其混合在一起！</p>
       {% highlight markdown %}{{ md_nesting }}{% endhighlight %}
     </div>
   </div>
@@ -682,7 +682,7 @@ tile is-ancestor
 
 {% highlight html %}{{ tile_any_content }}{% endhighlight %}
 
-{% include elements/anchor.html name="3 columns" %}
+{% include elements/anchor.html name="3 列" %}
 
 <div class="tile is-ancestor">
   <div class="tile is-parent">
@@ -777,7 +777,7 @@ tile is-ancestor
 
 {% highlight html %}{{ tile_3_columns }}{% endhighlight %}
 
-{% include elements/anchor.html name="4 columns" %}
+{% include elements/anchor.html name="4 列" %}
 
 <div class="tile is-ancestor">
   <div class="tile is-parent">

@@ -1,8 +1,8 @@
 ---
-title: Select
+title: 选择框（Select）
 layout: documentation
-doc-tab: form
-doc-subtab: select
+doc-tab: 表单
+doc-subtab: 选择框
 breadcrumb:
 - home
 - documentation
@@ -173,7 +173,7 @@ meta:
 
 <div class="content">
   <p>
-    The <code>select</code> class is a simple wrapper around the <code>&lt;select&gt;</code> HTML element, which gives the styling more flexibility and support for icons.
+    <code>select</code> 类是一个简单的对 HTML 元素 <code>&lt;select&gt;</code> 的包裹——提供更具有弹性和图标支持的样式支持。
   </p>
 </div>
 
@@ -187,21 +187,21 @@ meta:
 </div>
 
 <div class="content">
-  <p>Several <strong>modifiers</strong> are supported which affect:</p>
+  <p>支持的<strong>修饰符</strong>会影响：</p>
   <ul>
-    <li>the <strong><a href="#colors">color</a></strong></li>
-    <li>the <strong><a href="#sizes">size</a></strong></li>
-    <li>the <strong><a href="#states">state</a></strong></li>
+    <li><strong><a href="#colors">颜色</a></strong></li>
+    <li><strong><a href="#sizes">型号</a></strong></li>
+    <li><strong><a href="#states">状态</a></strong></li>
   </ul>
 </div>
 
-{% include elements/anchor.html name="Multiple select" %}
+{% include elements/anchor.html name="多项选择" %}
 
 <div class="columns">
   <div class="column is-half">
     <div class="content">
       <p>
-        You can style a <strong>multiple select</strong> dropdown, by using the <code>is-multiple</code> modifier, and by using the <code>multiple</code> HTML attribute.
+        您可以通过使用修饰符 <code>is-multiple</code> 和利用 HTML 属性 <code>multiple</code> 使其成为<strong>多项选择</strong>的下拉菜单。
       </p>
     </div>
     {{ select_multiple_example }}
@@ -211,7 +211,7 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Colors" %}
+{% include elements/anchor.html name="颜色" %}
 
 {% for color in site.data.colors.justColors %}
 {% capture foobar %}
@@ -225,11 +225,11 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="Styles" %}
+{% include elements/anchor.html name="样式" %}
 
 <div class="content">
   <p>
-    You can create a <strong>rounded dropdown</strong> by appending the <code>is-rounded</code> modifier:
+    您可以使用 <code>is-rounded</code> 修饰符创建<strong>圆角下拉菜单</strong>：
   </p>
 </div>
 
@@ -242,11 +242,11 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="Sizes" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    The <code>select</code> element comes in <strong>4</strong> different sizes:
+    <code>select</code> 元素有 <strong>4</strong> 种不同型号：
   </p>
 </div>
 
@@ -262,29 +262,29 @@ meta:
 {% include elements/snippet.html content=foobar %}
 {% endfor %}
 
-{% include elements/anchor.html name="States" %}
+{% include elements/anchor.html name="状态" %}
 
 <div class="content">
   <p>
-    Bulma styles the different <strong>states</strong> of the <code>select</code> element. Each state is available as a pseudo-class and a CSS class:
+    Bulma 为 <code>select</code> 元素设置了不同的<strong>状态</strong>。每个状态通过伪类和 CSS 类设定：
   </p>
   <ul>
     <li>
-      <code>:hover</code> and <code>is-hovered</code>
+      <code>:hover</code> 和 <code>is-hovered</code>
     </li>
     <li>
-      <code>:focus</code> and <code>is-focused</code>
+      <code>:focus</code> 和 <code>is-focused</code>
     </li>
     <li>
-      <code>:active</code> and <code>is-active</code>
+      <code>:active</code> 和 <code>is-active</code>
     </li>
   </ul>
   <p>
-    This allows you to obtain the style of a certain state without having to trigger it.
+    这就可以使您不必触发它而获得特定状态。
   </p>
 </div>
 
-<h4 class="subtitle">Normal</h4>
+<h4 class="subtitle">普通</h4>
 
 <div class="columns">
   <div class="column is-half">
@@ -295,7 +295,7 @@ meta:
   </div>
 </div>
 
-<h4 class="subtitle">Hover</h4>
+<h4 class="subtitle">悬停</h4>
 <div class="columns">
   <div class="column is-half">
     {{ hover_example }}
@@ -305,7 +305,7 @@ meta:
   </div>
 </div>
 
-<h4 class="subtitle">Focus</h4>
+<h4 class="subtitle">聚焦</h4>
 <div class="columns">
   <div class="column is-half">
     {{ focus_example }}
@@ -315,7 +315,7 @@ meta:
   </div>
 </div>
 
-<h4 class="subtitle">Loading</h4>
+<h4 class="subtitle">加载中</h4>
 <div class="columns">
   <div class="column is-half">
     {{ loading_example }}
@@ -325,22 +325,22 @@ meta:
   </div>
 </div>
 
-{% include elements/anchor.html name="With icons" %}
+{% include elements/anchor.html name="使用图标" %}
 
 <div class="content">
-  <p>You can append the <strong>modifier</strong> on a control:</p>
+  <p>您可以在一个控件上附加<strong>修饰符</strong>：</p>
   <ul>
     <li>
       <code>has-icons-left</code>
     </li>
   </ul>
-  <p>You also need to add a modifier on the <strong>icon</strong>:</p>
+  <p>还需要在<strong>图标</strong>上添加修饰符：</p>
   <ul>
     <li>
-      <code>icon is-left</code> since <code>has-icons-left</code> is used
+      因为用了 <code>has-icons-left</code> 所以要用 <code>icon is-left</code>
     </li>
   </ul>
-  <p>The size of the <strong>select</strong> will define the size of the icon container.</p>
+  <p><strong>select</strong> 的型号也会直接定义图标容器的型号。</p>
 </div>
 <div class="columns">
   <div class="column is-half">
@@ -355,7 +355,7 @@ meta:
   <div class="column is-half">
     <div class="content">
       <p>
-        If the control contains an icon, Bulma will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
+        如果控件包含图标，不论输入框的型号大小<em>或者</em>图标的型号大小，Bulma 都会确保图标<strong>居中</strong>。
       </p>
     </div>
     {{ has_icons_small_example }}

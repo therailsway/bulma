@@ -321,38 +321,38 @@
       "icon": "arrows-alt-h"
     },
     "layout-level": {
-      "name": "Level",
-      "subtitle": "一个多用途<strong>水平 level</strong>可包含几乎所有其它元素",
+      "name": "层",
+      "subtitle": "一个多用途<strong>水平层（Level）</strong>可包含几乎所有其它元素",
       "path": "/documentation/layout/level/",
       "icon": "ruler-horizontal"
     },
     "layout-media": {
-      "name": "多媒体对象",
-      "subtitle": "The famous <strong>media object</strong> prevalent in social media interfaces, but useful in any context",
+      "name": "媒体对象",
+      "subtitle": "著名的<strong>媒体对象</strong>不仅在社交媒体中常见，在任何媒体中都很有用",
       "path": "/documentation/layout/media-object/",
       "icon": "th-list"
     },
     "layout-hero": {
-      "name": "Hero",
-      "subtitle": "An imposing <strong>hero banner</strong> to showcase something",
+      "name": "大横幅",
+      "subtitle": "用来展示东西的令人印象深刻的<strong>大横幅（hero banner）</strong>",
       "path": "/documentation/layout/hero/",
       "icon": "star"
     },
     "layout-section": {
-      "name": "Section",
-      "subtitle": "A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading",
+      "name": "部分",
+      "subtitle": "一个简单的容器可以将您的网页划分成<strong>几部分</strong>，就像您正在阅读的就是",
       "path": "/documentation/layout/section/",
       "icon": "square"
     },
     "layout-footer": {
-      "name": "Footer",
-      "subtitle": "A simple responsive <strong>footer</strong> which can include anything: lists, headings, columns, icons, buttons, etc.",
+      "name": "地脚",
+      "subtitle": "一个简单的自适应<strong>地脚（footer）</strong>——可包含任何东西：列表、标题、列、图标、按钮等",
       "path": "/documentation/layout/footer/",
       "icon": "window-minimize"
     },
     "layout-tiles": {
-      "name": "Tiles",
-      "subtitle": "A <strong>single tile</strong> element to build 2-dimensional Metro-like, Pinterest-like, or whatever-you-like grids",
+      "name": "贴片",
+      "subtitle": "一个<strong>单个的贴片（Tile）</strong>元素可以构建二维的地铁图、类 Pinterest 图片或者任何您喜欢的网格",
       "path": "/documentation/layout/tiles/",
       "icon": "th"
     },
@@ -380,36 +380,36 @@
       "path": "/documentation/form/input/"
     },
     "form-textarea": {
-      "name": "Textarea",
-      "subtitle": "The multiline <strong>textarea</strong> and its variations",
+      "name": "文本区",
+      "subtitle": "多行<strong>文本区（textarea）</strong>和它的变体",
       "color": "link",
       "icon": "square",
       "path": "/documentation/form/textarea/"
     },
     "form-select": {
-      "name": "Select",
-      "subtitle": "The browser built-in <strong>select dropdown</strong>, styled accordingly",
+      "name": "选择框",
+      "subtitle": "浏览器内建的<strong>下拉选择框</strong>，以及如何定制样式",
       "color": "link",
       "icon": "mouse-pointer",
       "path": "/documentation/form/select/"
     },
     "form-checkbox": {
-      "name": "Checkbox",
-      "subtitle": "The 2-state <strong>checkbox</strong> in its native format",
+      "name": "复选框",
+      "subtitle": "原生具有二态的<strong>复选框（checkbox）</strong>",
       "color": "link",
       "icon": "check-square",
       "path": "/documentation/form/checkbox/"
     },
     "form-radio": {
-      "name": "Radio",
-      "subtitle": "The mutually exclusive <strong>radio buttons</strong> in their native format",
+      "name": "单选按钮",
+      "subtitle": "原生即互相排斥的<strong>单选按钮</strong>",
       "color": "link",
       "icon": "dot-circle",
       "path": "/documentation/form/radio/"
     },
     "form-file": {
-      "name": "File",
-      "subtitle": "A custom <strong>file upload</strong> input, without JavaScript",
+      "name": "文件上传",
+      "subtitle": "不用 JavaScript 定制<strong>文件上传（file upload）</strong>输入框",
       "color": "link",
       "icon": "cloud-upload-alt",
       "path": "/documentation/form/file/"

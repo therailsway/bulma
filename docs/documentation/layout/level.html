@@ -1,8 +1,8 @@
 ---
-title: Level
+title: 层（Level）
 layout: documentation
-doc-tab: layout
-doc-subtab: level
+doc-tab: 布局
+doc-subtab: 层
 breadcrumb:
 - home
 - documentation
@@ -124,40 +124,40 @@ breadcrumb:
 {% endcapture %}
 
 <div class="content">
-  <p>The <strong>structure</strong> of a level is the following:</p>
+  <p>层<strong>结构</strong>如下：</p>
   <ul>
     <li>
-      <code>level</code>: main container
+      <code>level</code>：主容器
       <ul>
-        <li><code>level-left</code> for the left side
+        <li><code>level-left</code> 用于左侧
         <li>
-          <code>level-right</code> for the right side
+          <code>level-right</code> 用于右侧
           <ul>
-            <li><code>level-item</code> for each individual element</li>
+            <li><code>level-item</code> 每一个独立的元素</li>
           </ul>
         </li>
       </ul>
     </li>
   </ul>
-  <p>In a <code>level-item</code>, you can then insert almost <em>anything</em> you want: a title, a button, a text input, or just simple text. No matter what elements you put inside a Bulma <code>level</code>, they will always be <strong>vertically centered</strong>.</p>
+  <p>在一个 <code>level-item</code> 里，您可以插入<em>任何</em>您想要的：标题、按钮、输入框或者就是一段文字。不管您放入什么元素到 Bulma 的 <code>level</code> 里，它们都会<strong>垂直居中</strong>对齐。</p>
 </div>
 
 {% include elements/snippet.html content=nav_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Centered level" %}
+{% include elements/anchor.html name="居中的层" %}
 
 <div class="content">
-  If you want a <strong>centered level</strong>, you can use as many <code>level-item</code> as you want, as long as they are <strong>direct</strong> children of the <code>level</code> container.
+  如果您想要一个<strong>居中的层</strong>，您可以使用任意多个 <code>level-item</code>，只要它们是 <code>level</code> 容器的 <strong>直接</strong> 子级即可。
 </div>
 
 {% include elements/snippet.html content=nav_centered_example horizontal=true more=true %}
 
 {% include elements/snippet.html content=nav_centered_bis_example horizontal=true more=true %}
 
-{% include elements/anchor.html name="Mobile level" %}
+{% include elements/anchor.html name="移动设备上的层" %}
 
 <div class="content">
-  By default, for space concerns, the level is vertical on mobile. If you want the level to be horizontal on mobile as well, add the <code>is-mobile</code> modifier on the <code>level</code> container.
+  默认情况下，由于空间原因，在移动设备上层是垂直堆叠的。如果您想要层在移动设备上也水平布局，在 <code>level</code> 容器上添加 <code>is-mobile</code> 修饰符即可。
 </div>
 
 {% include elements/snippet.html content=nav_mobile_example horizontal=true more=true %}
