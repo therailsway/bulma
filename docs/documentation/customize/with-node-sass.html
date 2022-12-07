@@ -1,8 +1,8 @@
 ---
-title: With node-sass
+title: 使用 node-sass
 layout: documentation
-doc-tab: customize
-doc-subtab: node-sass
+doc-tab: 定制
+doc-subtab: 使用 node-sass
 breadcrumb:
 - home
 - documentation
@@ -31,7 +31,7 @@ npm install bulma --save-dev
 {% capture step_2 %}
   <div class="content">
     <p>
-      You only need <strong>2 packages</strong> to customize Bulma: <code>node-sass</code> and <code>bulma</code> itself.
+      您只需要 <strong>2 个包</strong>定制 Bulma：<code>node-sass</code> 和 <code>bulma</code>。
     </p>
   </div>
 
@@ -39,7 +39,7 @@ npm install bulma --save-dev
 
   <div class="content">
     <p>
-      Your <code>package.json</code> should look like this at this point.
+      您的 <code>package.json</code> 此时看起来应该像这样。
     </p>
   </div>
 
@@ -70,7 +70,7 @@ npm start
 {% capture step_5 %}
   <div class="content">
     <p>
-      To build a CSS file from a Sass file, we can use <strong>node scripts</strong>. In <code>package.json</code>, add the following:
+      要从 Sass 文件构建 CSS 文件，可以使用 <strong>node scripts</strong>。在 <code>package.json</code> 中添加下列脚本：
     </p>
   </div>
 
@@ -79,18 +79,18 @@ npm start
   <div class="content">
     <ul>
       <li>
-        <code>css-build</code> takes <code>sass/mystyles.scss</code> as an input, and outputs <code>css/mystyles.css</code>, while omitting the source map
+        <code>css-build</code> 以 <code>sass/mystyles.scss</code> 为源码输出 <code>css/mystyles.css</code>，省略了源 map
       </li>
       <li>
-        <code>css-watch</code> builds the CSS and watches for changes
+        <code>css-watch</code> 构建 CSS 并且监测源码修改
       </li>
       <li>
-        <code>start</code> is simply a shortcut for <code>css-watch</code>
+        <code>start</code> 是 <code>css-watch</code> 的简写形式
       </li>
     </ul>
 
     <p>
-      To test it out, go in your <strong>terminal</strong> and run the following command:
+      要测试，进入您的<strong>终端</strong>并月运行下面命令：
     </p>
   </div>
 
@@ -98,7 +98,7 @@ npm start
 
   <div class="content">
     <p>
-      If set up correctly, you will see the following message:
+      如果安装正确，您会看到下面信息：
     </p>
   </div>
 
@@ -106,7 +106,7 @@ npm start
 
   <div class="content">
     <p>
-      <strong>Reload</strong> the page and it should be styled like this:
+      <strong>刷新</strong>页面会发现页面已经加载样式表：
     </p>
   </div>
 
@@ -122,7 +122,7 @@ npm start
 
   <div class="content">
     <p>
-      To <strong>watch for changes</strong>, just launch the following command:
+      要<strong>监测更新</strong>，只需使用下面命令：
     </p>
   </div>
 
@@ -137,7 +137,7 @@ npm start
 <hr>
 
 {% include components/step.html
-  title="2. Install the dev dependencies"
+  title="2. 安装开发依赖软件"
   content=step_2
 %}
 
@@ -157,7 +157,7 @@ npm start
 <hr>
 
 {% include components/step.html
-  title="5. Add node scripts to build your CSS"
+  title="5. 添加 node 脚本构建您的 CSS"
   content=step_5
 %}
 

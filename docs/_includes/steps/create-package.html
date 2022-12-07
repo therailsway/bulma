@@ -5,7 +5,7 @@ npm init
 {% capture step_1 %}
   <div class="content">
     <p>
-      In your terminal, create a new folder called <code>mybulma</code>, navigate to it, then type the following command:
+      在您的终端，创建一个叫做 <code>mybulma</code> 的新文件夹，进入该文件夹，然后键入下面命令：
     </p>
   </div>
 
@@ -13,12 +13,12 @@ npm init
 
   <div class="content">
     <p>
-      This will launch an interactive setup to create <code>package.json</code>. When prompted for an <strong>entry point</strong>, enter <code>{{ include.entry }}</code>.
+      这家载入一个互动安装程序创建 <code>package.json</code>。当提示输入一个<strong>入口点（entry point）</strong>时，输入 <code>{{ include.entry }}</code>。
     </p>
   </div>
 {% endcapture %}
 
-{% assign step_title = '. Create a <code style="white-space: nowrap;">package.json</code> file' | prepend: include.number %}
+{% assign step_title = '. 创建一个 <code style="white-space: nowrap;">package.json</code> 文件' | prepend: include.number %}
 
 {% include components/step.html
   title=step_title

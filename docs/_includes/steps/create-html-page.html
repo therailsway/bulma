@@ -1,7 +1,7 @@
 {% capture step_4 %}
   <div class="content">
     <p>
-      Create an HTML template which uses several Bulma components.
+      创建一个使用 Bulma 组件的 HTML 模板。
     </p>
   </div>
 
@@ -9,13 +9,13 @@
 
   <div class="content">
     <p>
-      Save this file as <code>mypage.html</code>{% if include.dist == true %} in the <code>dist</code> folder{% endif %}.
+      保存文件为 <code>mypage.html</code>{% if include.dist == true %}，同时确保该文件在文件夹 <code>dist</code> 内{% endif %}。
     </p>
     <p>
-      Notice the <code>css/mystyles.css</code> path for your stylesheet. This will be the location of the CSS file we will generate with Sass.
+      注意 <code>css/mystyles.css</code> 路径是您的样式表。这时我们要用 Sass 生成的 CSS 文件的位置。
     </p>
     <p>
-      Open the page in your browser:
+      在您的浏览器内打开页面：
     </p>
   </div>
 
@@ -23,14 +23,14 @@
     include components/figure.html
     path="customize/custom-bulma-01-unstyled"
     extension="png"
-    alt="Bulma unstyled"
+    alt="Bulma 未美化"
     width="600"
     height="300"
-    caption="The unstyled page"
+    caption="未美化页面"
   %}
 {% endcapture %}
 
-{% assign step_title = ". Create an HTML page" | prepend: include.number %}
+{% assign step_title = ". 创建一个 HTML 页面" | prepend: include.number %}
 
 {% include components/step.html
   title=step_title

@@ -1,8 +1,8 @@
 ---
-title: Typography helpers
+title: 排版辅助类（Typography helper）
 layout: documentation
-doc-tab: helpers
-doc-subtab: helpers-typography
+doc-tab: 辅助类
+doc-subtab: 排版辅助
 breadcrumb:
 - home
 - documentation
@@ -17,18 +17,18 @@ breadcrumb:
 <thead>
   <tr>
     <th>
-      Class
+      类
     </th>
     {% for breakpoint_hash in site.data.breakpoints %}
       {% assign breakpoint = breakpoint_hash[1] %}
       <th>
         {{ breakpoint.name }}<br>
         {% if breakpoint.id == 'mobile' %}
-          Up to <code>{{ breakpoint.to }}px</code>
+          上至 <code>{{ breakpoint.to }}px</code>
         {% elsif breakpoint.id == 'fullhd' %}
-          <code>{{ breakpoint.from }}px</code> and above
+          <code>{{ breakpoint.from }}px</code> 及以上
         {% else %}
-          Between <code>{{ breakpoint.from }}px</code> and <code>{{ breakpoint.to }}px</code>
+          从 <code>{{ breakpoint.from }}px</code> 到 <code>{{ breakpoint.to }}px</code>
         {% endif %}
       </th>
     {% endfor %}
@@ -44,7 +44,7 @@ breadcrumb:
 
 {% capture unchanged %}
 <td class="is-narrow has-text-grey-light">
-  unchanged
+  无变化
 </td>
 {% endcapture %}
 
@@ -54,11 +54,11 @@ breadcrumb:
 </td>
 {% endcapture %}
 
-{% include elements/anchor.html name="Size" %}
+{% include elements/anchor.html name="型号" %}
 
 <div class="content">
   <p>
-    There are <strong>{{ sizes | size }} sizes</strong> to choose from:
+    有 <strong>{{ sizes | size }} 种型号</strong>可选：
   </p>
 </div>
 
@@ -66,13 +66,13 @@ breadcrumb:
   <thead>
     <tr>
       <th>
-        Class
+        类
       </th>
       <th>
-        Font-size
+        字号
       </th>
       <th>
-        Size
+        型号
       </th>
     </tr>
   </thead>
@@ -88,14 +88,14 @@ breadcrumb:
   </tbody>
 </table>
 
-{% include elements/anchor.html name="Responsive size" %}
+{% include elements/anchor.html name="自适应型号" %}
 
 <div class="content">
   <p>
-    You can choose a <strong>specific</strong> size for <em>each</em> viewport width. You simply need to append the <strong>viewport width</strong> to the size modifier.
+    您可以选择为<em>每个</em>视口宽度选择一个<strong>特定</strong>型号。您只需为每个型号修饰符后面再附加一个<strong>视口宽度</strong>即可。
   </p>
   <p>
-    For example, here are the modifiers for <code>$size-1</code>:
+    例如，这是 <code>$size-1</code> 的修饰符：
   </p>
 </div>
 
@@ -157,15 +157,15 @@ breadcrumb:
 
 <div class="content">
   <p>
-    You can use the same logic for each of the <strong>7 sizes</strong>.
+    您可以使用同样的逻辑修改其他 <strong>7 个型号</strong>。
   </p>
 </div>
 
-{% include elements/anchor.html name="Alignment" %}
+{% include elements/anchor.html name="对齐方式" %}
 
 <div class="content">
   <p>
-    You can align the text with the use of one of <strong>4 alignment helpers</strong>:
+    您可以使用 <strong>4 种对齐辅助类</strong>之一对齐文字：
   </p>
 </div>
 
@@ -173,42 +173,42 @@ breadcrumb:
   <thead>
     <tr>
       <th>
-        Class
+        类
       </th>
       <th>
-        Alignment
+        对齐方式
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
     <td><code>has-text-centered</code></td>
-    <td>Makes the text <strong>centered</strong></td>
+    <td>使文本<strong>居中</strong></td>
     </tr>
     <tr>
     <td><code>has-text-justified</code></td>
-    <td>Makes the text <strong>justified</strong></td>
+    <td>使文本<strong>两端对齐</strong></td>
     </tr>
     <tr>
     <td><code>has-text-left</code></td>
-    <td>Makes the text aligned to the <strong>left</strong></td>
+    <td>使文本<strong>左对齐</strong></td>
     </tr>
     <tr>
     <td><code>has-text-right</code></td>
-    <td>Makes the text aligned to the <strong>right</strong></td>
+    <td>使文本<strong>右对齐</strong></td>
     </tr>
   </tbody>
 </table>
 
-{% include elements/anchor.html name="Responsive Alignment" %}
+{% include elements/anchor.html name="自适应对齐" %}
 
 <div class="content">
   <p>
-    You can <strong>align text</strong> differently for each <strong>viewport width</strong>. Simply append the <strong>viewport width</strong> to the alignment modifier.
+    您可以根据不同的<strong>视口宽度</strong>使用不同的<strong>文本对齐方式</strong>。只需在<strong>视口宽度</strong>后面加上对齐修饰符即可。
   </p>
 
   <p>
-    For example, here are the modifiers for <code>has-text-left</code>:
+    例如，这是 <code>has-text-left</code> 的修饰符：
   </p>
 </div>
 
@@ -294,15 +294,15 @@ breadcrumb:
 
 <div class="content">
   <p>
-    You can use the same logic for each of the <strong>4 alignments</strong>.
+    同样的逻辑您也可以对其它 <strong>4 种对齐方式</strong>使用。
   </p>
 </div>
 
-{% include elements/anchor.html name="Text transformation" %}
+{% include elements/anchor.html name="文本变形" %}
 
 <div class="content">
   <p>
-    You can transform the text with the use of one of <strong>4 text transformation helpers</strong>:
+    您可以通过使用 <strong>4 种文本变形辅助类</strong>之一使文本变形：
   </p>
 </div>
 
@@ -310,10 +310,10 @@ breadcrumb:
   <thead>
   <tr>
     <th>
-      Class
+      类
     </th>
     <th>
-      Transformation
+      变形
     </th>
   </tr>
   </thead>
@@ -341,11 +341,11 @@ breadcrumb:
   </tbody>
 </table>
 
-{% include elements/anchor.html name="Text weight" %}
+{% include elements/anchor.html name="文本粗细" %}
 
 <div class="content">
   <p>
-    You can transform the text weight with the use of one of <strong>5 text weight helpers</strong>:
+    您可以通过使用 <strong>5 文本粗细辅助类</strong>之一改变文本的粗细：
   </p>
 </div>
 
@@ -353,10 +353,10 @@ breadcrumb:
   <thead>
   <tr>
     <th>
-      Class
+      类
     </th>
     <th>
-      Weight
+      粗细
     </th>
   </tr>
   </thead>
@@ -384,11 +384,11 @@ breadcrumb:
   </tbody>
 </table>
 
-{% include elements/anchor.html name="Font family" %}
+{% include elements/anchor.html name="字体族" %}
 
 <div class="content">
   <p>
-    You can change the font family with the use of one of <strong>5 font family helpers</strong>:
+    您可以通过使用 <strong>5 种字体族辅助类</strong>之一来修改字体族：
   </p>
 </div>
 

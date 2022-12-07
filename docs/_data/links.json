@@ -124,21 +124,21 @@
     },
     "customize": {
       "name": "定制",
-      "subtitle": "Create your <strong>own theme</strong> with a simple set of <strong>variables</strong>",
+      "subtitle": "用一组简单的<strong>变量</strong>创建您<strong>自己的主题</strong>",
       "color": "purple",
       "icon": "paint-brush",
       "path": "/documentation/customize/"
     },
     "customize-concepts": {
       "name": "概念",
-      "subtitle": "What makes Bulma <strong>customizable</strong>",
+      "subtitle": "什么是 Bulma 的<strong>定制</strong>",
       "color": "info",
       "icon": "lightbulb",
       "path": "/documentation/customize/concepts/"
     },
     "customize-variables": {
       "name": "变量",
-      "subtitle": "See how Bulma uses <strong>Sass variables</strong> to allow easy customization",
+      "subtitle": "查看 Bulma 如何使用 <strong>Sass 变量</strong>实现轻松定制",
       "color": "grey",
       "icon": "cogs",
       "path": "/documentation/customize/variables/"
@@ -182,8 +182,8 @@
       "path": "/documentation/overview/modifiers/"
     },
     "modifiers-helpers": {
-      "name": "辅助",
-      "subtitle": "Apply <strong>helper classes</strong> to almost any element, in order to alter its style",
+      "name": "辅助类",
+      "subtitle": "修改任何元素样式可以使用<strong>辅助类</strong>",
       "color": "danger",
       "icon": "medkit",
       "path": "/documentation/modifiers/helpers/"
@@ -197,7 +197,7 @@
     },
     "modifiers-color-helpers": {
       "name": "颜色辅助",
-      "subtitle": "Change the <strong>color</strong> of the text and/or background",
+      "subtitle": "修改文字和/或背景的<strong>颜色</strong>",
       "color": "info",
       "icon": "tint",
       "path": "/documentation/modifiers/color-helpers/"
@@ -210,50 +210,50 @@
       "path": "/documentation/modifiers/typography-helpers/"
     },
     "helpers": {
-      "name": "辅助",
-      "subtitle": "Apply <strong>helper classes</strong> to almost any element, in order to alter their style",
+      "name": "辅助类",
+      "subtitle": "给任何元素应用<strong>辅助类</strong>修改它们的样式",
       "color": "danger",
       "icon": "medkit",
       "path": "/documentation/helpers/"
     },
     "helpers-color": {
       "name": "颜色",
-      "subtitle": "Change the <strong>color</strong> of the text and/or background",
+      "subtitle": "修改文字和（或）背景的<strong>颜色</strong>",
       "color": "info",
       "icon": "tint",
       "path": "/documentation/helpers/color-helpers/"
     },
     "helpers-typography": {
       "name": "排版",
-      "subtitle": "Change the <strong>size</strong>, weight, and other font properties of the text",
+      "subtitle": "修改<strong>型号</strong>、字体粗细和其他文字的字体属性",
       "color": "grey-dark",
       "icon": "font",
       "path": "/documentation/helpers/typography-helpers/"
     },
     "helpers-spacing": {
-      "name": "留白",
-      "subtitle": "Change the <strong>size</strong> and <strong>color</strong> of the text for one or multiple viewport width",
+      "name": "间距",
+      "subtitle": "修改面向一个或多个视口宽对的文字<strong>型号</strong>和<strong>颜色</strong>",
       "color": "grey-dark",
       "icon": "arrows-alt-h",
       "path": "/documentation/helpers/spacing-helpers/"
     },
     "helpers-visibility": {
       "name": "可视",
-      "subtitle": "<strong>Show/hide content</strong> depending on the width of the viewport",
+      "subtitle": "根据不同的视口宽度来<strong>显示（隐藏）内容</strong>",
       "color": "primary",
       "icon": "eye",
       "path": "/documentation/helpers/visibility-helpers/"
     },
     "helpers-flexbox": {
-      "name": "FlexBox",
-      "subtitle": "Helpers for all <strong>Flexbox</strong> properties",
+      "name": "弹性盒子",
+      "subtitle": "面向所有具有<strong>弹性盒子（Flexbox）</strong>属性的辅助类",
       "color": "primary",
       "icon": "ellipsis-h",
       "path": "/documentation/helpers/flexbox-helpers/"
     },
     "helpers-other": {
       "name": "其他",
-      "subtitle": "其他有用的 Bulma 辅助",
+      "subtitle": "其他有用的 Bulma 辅助类",
       "color": "primary",
       "icon": "medkit",
       "path": "/documentation/helpers/other-helpers/"
@@ -315,7 +315,7 @@
       "path": "/documentation/layout/"
     },
     "layout-container": {
-      "name": "Container",
+      "name": "容器",
       "subtitle": "一个简单的 <strong>container</strong> 可以从说明方向居中您的内容",
       "path": "/documentation/layout/container/",
       "icon": "arrows-alt-h"
@@ -352,7 +352,7 @@
     },
     "layout-tiles": {
       "name": "贴片",
-      "subtitle": "一个<strong>单个的贴片（Tile）</strong>元素可以构建二维的地铁图、类 Pinterest 图片或者任何您喜欢的网格",
+      "subtitle": "一个<strong>单个的贴片（Tile）</strong>元素可以构建二维的类似地铁图、Pinterest 图片集效果或者任何您喜欢的网格系统",
       "path": "/documentation/layout/tiles/",
       "icon": "th"
     },
@@ -488,7 +488,7 @@
     },
     "elements-table": {
       "name": "Table",
-      "subtitle": "The inevitable HTML <strong>table</strong>, with special case cells",
+      "subtitle": "回避不了的 HTML <strong>表格（Table）</strong>（拥有不一样的单元格）",
       "color": "info",
       "icon": "table",
       "path": "/documentation/elements/table/"

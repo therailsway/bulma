@@ -1,8 +1,8 @@
 ---
-title: Flexbox helpers
+title: 弹性盒子（Flexbox）辅助类
 layout: documentation
-doc-tab: helpers
-doc-subtab: helpers-flexbox
+doc-tab: 辅助类
+doc-subtab: 弹性盒子辅助类
 breadcrumb:
 - home
 - documentation
@@ -62,7 +62,7 @@ align-self-values:
 
 <div class="content">
   <p>
-    Combined with <code>is-flex</code>, all of the <strong>Flexbox CSS properties</strong> are available as Bulma helpers:
+    联合使用 <code>is-flex</code> 时，所有<strong>弹性盒子 CSS 属性</strong> 就都赋予了 Bulma 辅助类：
   </p>
   <ul>
     <li><code>flex-direction</code></li>
@@ -76,42 +76,42 @@ align-self-values:
   </ul>
 </div>
 
-{% include elements/anchor.html name="Flex direction" %}
+{% include elements/anchor.html name="Flex 方向" %}
 
 {% include elements/flexbox-helper-table.html property="flex-direction" values=page.flex-direction-values %}
 
-{% include elements/anchor.html name="Flex wrap" %}
+{% include elements/anchor.html name="Flex 封装" %}
 
 {% include elements/flexbox-helper-table.html property="flex-wrap" values=page.flex-wrap-values %}
 
-{% include elements/anchor.html name="Justify content" %}
+{% include elements/anchor.html name="内容调整" %}
 
 {% include elements/flexbox-helper-table.html property="justify-content" values=page.justify-content-values %}
 
-{% include elements/anchor.html name="Align content" %}
+{% include elements/anchor.html name="内容对齐" %}
 
 {% include elements/flexbox-helper-table.html property="align-content" values=page.align-content-values %}
 
-{% include elements/anchor.html name="Align items" %}
+{% include elements/anchor.html name="项目对齐" %}
 
 {% include elements/flexbox-helper-table.html property="align-items" values=page.align-items-values %}
 
-{% include elements/anchor.html name="Align self" %}
+{% include elements/anchor.html name="自我对齐" %}
 
 {% include elements/flexbox-helper-table.html property="align-self" values=page.align-self-values %}
 
-{% include elements/anchor.html name="Flex grow and flex shrink" %}
+{% include elements/anchor.html name="Flex 增长和 Flex 收缩" %}
 
 <table class="table is-bordered">
   <thead>
     <tr>
-      <th>Class</th>
-      <th>Property: Value</th>
+      <th>类</th>
+      <th>属性：值</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th colspan="2">Grow</th>
+      <th colspan="2">增长</th>
     </tr>
     {% for i in (0..5) %}
       <tr>
@@ -120,7 +120,7 @@ align-self-values:
       </tr>
     {% endfor %}
     <tr>
-      <th colspan="2">Shrink</th>
+      <th colspan="2">收缩</th>
     </tr>
     {% for i in (0..5) %}
       <tr>

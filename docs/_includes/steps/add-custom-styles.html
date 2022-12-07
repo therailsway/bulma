@@ -41,7 +41,7 @@ $input-shadow: none;
 {% capture step_6 %}
   <div class="content">
     <p>
-      Replace the content of the <code>mystyles.scss</code> file with the following:
+      用下面代码替换 <code>mystyles.scss</code> 文件内容：
     </p>
   </div>
 
@@ -52,11 +52,11 @@ $input-shadow: none;
   <div class="content">
     {% if include.build %}
       <p>
-        Rebuild the CSS to see the result:
+        重新编译 CSS 查看结果：
       </p>
     {% else %}
       <p>
-        Since you are watching for changes, simply <strong>save the file</strong> to see the result:
+        由于您在监测修改，只需<strong>保存文件</strong>即可查看结果：
       </p>
     {% endif %}
   </div>
@@ -74,12 +74,12 @@ $input-shadow: none;
 
   <div class="content">
     <p>
-      And voilà! You've managed to install and customize Bulma.
+      嗯，voilà！您可以安装和定制 Bulma 啦。
     </p>
   </div>
 {% endcapture %}
 
-{% assign step_title = ". Add your own Bulma styles" | prepend: include.number %}
+{% assign step_title = ". 添加您自己的 Bulma 样式" | prepend: include.number %}
 
 {% include components/step.html
   title=step_title

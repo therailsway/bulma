@@ -1,8 +1,8 @@
 ---
-title: Responsive helpers
+title: 自适应辅助类
 layout: documentation
-doc-tab: helpers
-doc-subtab: helpers-visibility
+doc-tab: 辅助类
+doc-subtab: 自适应辅助类
 breadcrumb:
 - home
 - documentation
@@ -14,18 +14,18 @@ breadcrumb:
 <thead>
   <tr>
     <th>
-      Class
+      类
     </th>
     {% for breakpoint_hash in site.data.breakpoints %}
       {% assign breakpoint = breakpoint_hash[1] %}
       <th>
         {{ breakpoint.name }}<br>
         {% if breakpoint.id == 'mobile' %}
-          Up to <code>{{ breakpoint.to }}px</code>
+          上至 <code>{{ breakpoint.to }}px</code>
         {% elsif breakpoint.id == 'fullhd' %}
-          <code>{{ breakpoint.from }}px</code> and above
+          <code>{{ breakpoint.from }}px</code> 及以上
         {% else %}
-          Between <code>{{ breakpoint.from }}px</code> and <code>{{ breakpoint.to }}px</code>
+          从 <code>{{ breakpoint.from }}px</code> 到 <code>{{ breakpoint.to }}px</code>
         {% endif %}
       </th>
     {% endfor %}
@@ -41,27 +41,27 @@ breadcrumb:
 
 {% capture visible %}
 <td class="is-narrow has-text-success has-background-success-light">
-  Visible
+  显示
 </td>
 {% endcapture %}
 
 {% capture hidden %}
 <td class="is-narrow has-text-danger has-background-danger-light">
-  Hidden
+  隐藏
 </td>
 {% endcapture %}
 
 {% capture unchanged %}
 <td class="is-narrow has-text-grey-light">
-  Unchanged
+  无变化
 </td>
 {% endcapture %}
 
-{% include elements/anchor.html name="Show" %}
+{% include elements/anchor.html name="显示" %}
 
 <div class="content">
   <p>
-    You can use one of the following <code>display</code> classes:
+    您可以使用下列 <code>display</code> 类之一：
   </p>
   <ul>
     <li><code>is-block</code></li>
@@ -70,7 +70,7 @@ breadcrumb:
     <li><code>is-inline-block</code></li>
     <li><code>is-inline-flex</code></li>
   </ul>
-  <p>For example, here's how the <code>is-flex</code> helper works:</p>
+  <p>例如，这是 <code>is-flex</code> 辅助类如何工作的：</p>
 </div>
 
 <div class="table-container">
@@ -119,7 +119,7 @@ breadcrumb:
       </tr>
       <tr>
         <th colspan="5">
-          <p>Classes to display <strong>up to</strong> or <strong>from</strong> a specific breakpoint</p>
+          <p>类显示<strong>上至</strong>或<strong>从</strong>一个特定断点开始</p>
         </th>
       </tr>
       <tr>
@@ -178,11 +178,11 @@ breadcrumb:
 
 <div class="content">
   <p>
-    For the other display options, just replace <code>is-flex</code> with <code>is-block</code> <code>is-inline</code> <code>is-inline-block</code> or <code>is-inline-flex</code>
+    至于其他显示选项，只需用 <code>is-block</code>、<code>is-inline</code>、<code>is-inline-block</code> 或者 <code>is-inline-flex</code> 替换 <code>is-flex</code> 即可
   </p>
 </div>
 
-{% include elements/anchor.html name="Hide" %}
+{% include elements/anchor.html name="隐藏" %}
 
 <div class="table-container">
   <table class="table is-bordered">
@@ -230,7 +230,7 @@ breadcrumb:
       </tr>
       <tr>
         <th colspan="5">
-          <p>Classes to hide <strong>up to</strong> or <strong>from</strong> a specific breakpoint</p>
+          <p>类隐藏<strong>上至</strong>或<strong>从</strong>一个特定断点开始</p>
         </th>
       </tr>
       <tr>
@@ -287,21 +287,21 @@ breadcrumb:
   </table>
 </div>
 
-{% include elements/anchor.html name="Other visibility helpers" %}
+{% include elements/anchor.html name="其他可视辅助类" %}
 
 <table class="table is-bordered">
   <tbody>
     <tr>
       <td><code>is-invisible</code></td>
-      <td>Adds visibility <strong>hidden</strong></td>
+      <td>添加可视性之<strong>隐藏</strong></td>
     </tr>
     <tr>
       <td><code>is-hidden</code></td>
-      <td>Hides element</td>
+      <td>隐藏元素</td>
     </tr>
     <tr>
       <td><code>is-sr-only</code></td>
-      <td>Hide elements <strong>visually</strong> but keep the element available to be announced by a <strong>screen reader</strong></td>
+      <td>隐藏元素的<strong>显示</strong>但要保证元素对于<strong>屏幕阅读器</strong>可见</td>
     </tr>
   </tbody>
 </table>

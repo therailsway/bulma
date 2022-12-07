@@ -1,8 +1,8 @@
 ---
-title: Spacing helpers
+title: 间距辅助（Spacing helpers）
 layout: documentation
-doc-tab: helpers
-doc-subtab: helpers-spacing
+doc-tab: 辅助类
+doc-subtab: 间距辅助
 breadcrumb:
 - home
 - documentation
@@ -40,48 +40,48 @@ customValues:
 {% include elements/new-tag.html version="0.9.0" %}
 
 <div class="content">
-  <p>Bulma provides <strong>margin</strong> <code>m*</code> and <strong>padding</strong> <code>p*</code> helpers in all <strong>directions</strong>:</p>
+  <p>Bulma 提供所有<strong>方向</strong>的<strong>外边距（margin）</strong><code>m*</code> 和<strong>内边距（padding）</strong><code>p*</code>辅助类：</p>
 
   <ul>
     <li>
-      <code>*t</code> for <strong>top</strong>
+      <code>*t</code> 是<strong>顶端（top）</strong>
     </li>
     <li>
-      <code>*r</code> for <strong>right</strong>
+      <code>*r</code> 是<strong>右侧（right）</strong>
     </li>
     <li>
-      <code>*b</code> for <strong>bottom</strong>
+      <code>*b</code> 是<strong>底端（bottom）</strong>
     </li>
     <li>
-      <code>*l</code> for <strong>left</strong>
+      <code>*l</code> 是<strong>左侧（left）</strong>
     </li>
     <li>
-      <code>*x</code> horizontally for both <strong>left</strong> and <strong>right</strong>
+      <code>*x</code> 是水平方向（包括 <strong>左侧</strong>和<strong>右侧</strong>）
     </li>
     <li>
-      <code>*y</code> vertically for both <strong>top</strong> and <strong>bottom</strong>
+      <code>*y</code> 是垂直方向（包括<strong>顶端</strong>和<strong>底端</strong>）
     </li>
   </ul>
 
   <p>
-    You need to <strong>combine</strong> a margin/padding prefix with a direction suffix. For example:
+    您需要<strong>联合</strong>使用内边距/外边距和方向的前缀。例如：
   </p>
 
   <ul>
-    <li>for a <code>margin-top</code>, use <code>mt-*</code></li>
-    <li>for a <code>padding-bottom</code>, use <code>pb-*</code></li>
-    <li>for both <code>margin-left</code> and <code>margin-right</code>, use <code>mx-*</code></li>
+    <li>对于 <code>margin-top</code> 使用 <code>mt-*</code></li>
+    <li>对于 <code>padding-bottom</code> 使用 <code>pb-*</code></li>
+    <li>对于 <code>margin-left</code> 和 <code>margin-right</code> 使用 <code>mx-*</code></li>
   </ul>
 
   <p>
-    Each of these <code>property-direction</code> <strong>combinations</strong> needs to be appended with one of <strong>6 value suffixes</strong>:
+    每次使用这些 <code>property-direction</code> <strong>联合</strong>符号时需要附加 <strong>6 种值后缀</strong>之一：
   </p>
 </div>
 
 <table class="table is-bordered">
   <thead>
-    <th>Suffix</th>
-    <th>Value</th>
+    <th>后缀</th>
+    <th>值</th>
   </thead>
   <tbody>
     <tr><td><code>*-0</code></td><td><code>0</code></td></tr>
@@ -94,10 +94,10 @@ customValues:
   </tbody>
 </table>
 
-{% include elements/anchor.html name="List of all spacing helpers" %}
+{% include elements/anchor.html name="所有间距辅助类列表" %}
 
 <p class="block">
-  There are <strong>112 spacing helpers</strong> to choose from:
+  共有 <strong>112 种间距辅助类</strong>可供选择：
 </p>
 
 {% include
@@ -111,7 +111,7 @@ customValues:
 
 <div class="content">
   <p>
-    To use these classes, simply append them to any HTML element:
+    使用这些类，将其添加到人任何 HTML 元素后面即可：
   </p>
 </div>
 
@@ -132,7 +132,7 @@ customValues:
 </p>
 {% endhighlight %}
 
-{% include elements/anchor.html name="Configuration" %}
+{% include elements/anchor.html name="配置" %}
 
 {% capture custom %}
 $spacing-shortcuts: ("margin": "mg");
@@ -143,30 +143,30 @@ $spacing-values: ("small": 10px, "medium": 30px, "large": 60px);
 
 <div class="content">
   <p>
-    Because every developer has their own preferences, and to satisfy Bulma's customization features, it's possible to specify your own <strong>class name shortcuts</strong> as well as the <strong>spacing values</strong>.
+    由于每个开发者都有自己的个人习惯，正好 Bulma 也有定制的功能，所以您可以自行定制<strong>类名简写</strong>和<strong>间距值</strong>。
   </p>
   <p>
-    For example, if you wanted:
+    例如，如果您想要：
   </p>
   <ul>
     <li>
-      <strong>margin</strong> to be abbreviated to <code>mg</code>
+      <strong>margin</strong> 简写为 <code>mg</code>
     </li>
     <li>
-      <strong>padding</strong> to be totally <strong class="has-text-danger">excluded</strong>
+      <strong>padding</strong> 就<strong class="has-text-danger">没有</strong>
     </li>
     <li>
-      <strong>horizontal</strong> to be abbreviated to <code>h</code>
+      <strong>horizontal</strong> 简写为 <code>h</code>
     </li>
     <li>
-      <strong>vertical</strong> to be excluded as well
+      <strong>vertical</strong> 也不要了
     </li>
     <li>
-      and to only have 3 values: <strong>"small"</strong> at <code>10px</code>, <strong>"medium"</strong> at <code>30px</code>, and <strong>"large"</strong> at <code>60px</code>
+      只有 3 个值：<strong>"small"</strong> 是 <code>10px</code>，<strong>"medium"</strong> 是 <code>30px</code>，<strong>"large"</strong> 是 <code>60px</code>
     </li>
   </ul>
   <p>
-    You can simplify the CSS output by customizing these <strong>SCSS variables</strong>:
+    您可以通过定制 <strong>SCSS 变量</strong>简化 CSS 输出：
   </p>
 </div>
 
@@ -181,5 +181,5 @@ $spacing-values: ("small": 10px, "medium": 30px, "large": 60px);
 %}
 
 <p>
-  By customizing the output, you've narrowed down the list of spacing helpers from 112 to only <strong>18</strong>.
+  通过定制输出，您已经缩减间距辅助类列表从原来的 112 行到了现在 <strong>18</strong> 行。
 </p>

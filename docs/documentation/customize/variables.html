@@ -1,8 +1,8 @@
 ---
-title: Variables
+title: 变量
 layout: documentation
-doc-tab: customize
-doc-subtab: variables
+doc-tab: 定制
+doc-subtab: 变量
 breadcrumb:
 - home
 - documentation
@@ -16,23 +16,23 @@ breadcrumb:
 {% assign derived_vars      = derived_variables.by_name %}
 
 <div class="content">
-  <p>Bulma has <strong>two</strong> variable files divided into <strong>4</strong> sections:</p>
+  <p>Bulma 有<strong> 2 个</strong>变量文件分成 <strong>4</strong> 部分：</p>
 
   <ol>
     <li>
-      <strong>Initial variables</strong>: where you define variables by <strong>literal value</strong>, like:
+      <strong>初始变量</strong>：通过<strong>字面值</strong>定义变量，例如：
       <ul>
-        <li><strong>colors</strong>: <code>{{ initial_vars['$blue'].name }}: {{ initial_vars['$blue'].value }}</code></li>
-        <li><strong>font sizes</strong>: <code>{{ initial_vars['$size-1'].name }}: {{ initial_vars['$size-1'].value }}</code></li>
-        <li><strong>dimensions</strong>: <code>{{ initial_vars['$gap'].name }}: {{ initial_vars['$gap'].value }}</code></li>
-        <li><strong>other values</strong>: <code>{{ initial_vars['$easing'].name }}: {{ initial_vars['$easing'].value }}</code> or <code>{{ initial_vars['$radius-large'].name }}: {{ initial_vars['$radius-large'].value }}</code></li>
+        <li><strong>颜色</strong>：<code>{{ initial_vars['$blue'].name }}: {{ initial_vars['$blue'].value }}</code></li>
+        <li><strong>字号</strong>：<code>{{ initial_vars['$size-1'].name }}: {{ initial_vars['$size-1'].value }}</code></li>
+        <li><strong>尺寸</strong>：<code>{{ initial_vars['$gap'].name }}: {{ initial_vars['$gap'].value }}</code></li>
+        <li><strong>其它值</strong>：<code>{{ initial_vars['$easing'].name }}: {{ initial_vars['$easing'].value }}</code> or <code>{{ initial_vars['$radius-large'].name }}: {{ initial_vars['$radius-large'].value }}</code></li>
       </ul>
     </li>
     <li>
-      <strong>Derived variables</strong> where variables are <strong>calculated</strong> from the values set in the previous file. For example, you can have:
+      <strong>衍生变量</strong>：通过前面文件中变量的值<strong>计算</strong>而来。例如，您可以得到：
       <ul>
         <li>
-          <strong>Primary colors</strong> derived from the initial variables:
+          <strong>主颜色</strong>衍生自初始变量：
           <ul>
             <li><code>{{ derived_vars['$primary'].name }}: {{ derived_vars['$primary'].value }}</code></li>
             <li><code>{{ derived_vars['$link'].name }}: {{ derived_vars['$link'].value }}</code></li>
@@ -44,11 +44,11 @@ breadcrumb:
             <li><code>{{ derived_vars['$text'].name }}: {{ derived_vars['$text'].value }}</code></li>
           </ul>
         </li>
-        <li><code>{{ derived_vars['$background'].name }}: {{ derived_vars['$background'].value }}</code>: a general background color</li>
-        <li><code>{{ derived_vars['$link'].name }}: {{ derived_vars['$link'].value }}</code>: the links use the primary color</li>
-        <li><code>{{ derived_vars['$family-primary'].name }}: {{ derived_vars['$family-primary'].value }}</code>: the primary font family is the sans-serif one</li>
+        <li><code>{{ derived_vars['$background'].name }}: {{ derived_vars['$background'].value }}</code>: 常用背景色</li>
+        <li><code>{{ derived_vars['$link'].name }}: {{ derived_vars['$link'].value }}</code>: 链接使用主色</li>
+        <li><code>{{ derived_vars['$family-primary'].name }}: {{ derived_vars['$family-primary'].value }}</code>: 主字体族是 sans-serif</li>
         <li>
-          <strong>Lists and maps</strong> which are collections of already defined variables:
+          <strong>列表和映射</strong>是已定义变量集合：
           <ul>
             <li><code>{{ derived_vars['$colors'].name }}: {{ derived_vars['$colors'].value }}</code></li>
             <li><code>{{ derived_vars['$shades'].name }}: {{ derived_vars['$shades'].value }}</code></li>
@@ -60,15 +60,15 @@ breadcrumb:
   </ol>
 
   <p>
-    To <strong>override</strong> any of these variables, just set them <em>before</em> importing Bulma.
+    要<strong>重新设置</strong>任何这些变量，只需在导入 Bulma <em>之前</em> 设置即可。
   </p>
 </div>
 
-{% include elements/anchor.html name="Initial variables" %}
+{% include elements/anchor.html name="初始变量" %}
 
 <div class="content">
   <p>
-    These are <a href="https://github.com/jgthms/bulma/blob/master/sass/{{ initial_variables.file_path }}" target="_blank" rel="nofollow">initial variables</a> with a <strong>literal</strong> value.
+    这些是带有<strong>字面</strong>值的<a href="https://github.com/jgthms/bulma/blob/master/sass/{{ initial_variables.file_path }}" target="_blank" rel="nofollow">初始变量</a>。
   </p>
 </div>
 
@@ -89,7 +89,7 @@ breadcrumb:
 
 {%
   include components/variables.html
-    anchor_name    = 'Derived variables'
+    anchor_name    = '衍生变量'
     data           = derived_variables
     custom_message = custom_message
     table_class    = 'is-bordered'
@@ -101,7 +101,7 @@ breadcrumb:
 
 {%
   include components/variables.html
-    anchor_name    = 'Generic variables'
+    anchor_name    = '通用变量'
     tab            = 'base'
     subtab         = 'generic'
     custom_message = custom_message

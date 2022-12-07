@@ -1,8 +1,8 @@
 ---
-title: Concepts
+title: 概念
 layout: documentation
-doc-tab: customize
-doc-subtab: concepts
+doc-tab: 定制
+doc-subtab: 概念
 breadcrumb:
 - home
 - documentation
@@ -14,34 +14,34 @@ breadcrumb:
 
 <div class="content">
   <p>
-    Bulma is highly customizable thanks to <strong>419 Sass variables</strong> living across <strong>28 files</strong>.
+    Bulma 的高度可定制化要感谢遍布 <strong>28 个文件</strong>的 <strong>419 个 Sass 变量</strong>。
   </p>
 
   <p>
-    These variables exist at 4 levels:
+    这些变量分 4 个层面：
   </p>
 
   <ul>
     <li>
-      <strong><a href="{{ site.url }}{{ variables_link.path }}#initial-variables">initial variables</a></strong>: global variables with <strong>literal</strong> values
+      <strong><a href="{{ site.url }}{{ variables_link.path }}#initial-variables">初始变量</a></strong>：带有<strong>字面</strong>值的全局变量
     </li>
     <li>
-      <strong><a href="{{ site.url }}{{ variables_link.path }}#derived-variables">derived variables</a></strong>: global variables with values that reference other variables, or are computed
+      <strong><a href="{{ site.url }}{{ variables_link.path }}#derived-variables">衍生变量</a></strong>：带有值（参考其它变量或者计算而得）的全局变量
     </li>
     <li>
-      <strong><a href="{{ site.url }}{{ variables_link.path }}#generic-variables">generic variables</a></strong>: for the HTML elements which carry no CSS class
+      <strong><a href="{{ site.url }}{{ variables_link.path }}#generic-variables">通用变量</a></strong>：不带有 CSS 类的 HTML 元素
     </li>
     <li>
-      <strong>element/component variables</strong>: variables that are specific to a Bulma element/component
+      <strong>元素（组件）变量</strong>：在 Bulma 元素（组件）内使用的变量
     </li>
   </ul>
 
   <p>
-    Since these variables carry the <code>!default</code> flag, they can be assigned a <strong>new value</strong> either before or after having been imported.
+    由于这些变量带有 <code>!default</code> 标记，所以不管是在导入前还是导入后，它们都可以分配<strong>新值</strong>。
   </p>
 </div>
 
-{% include elements/anchor.html name="Strategy" %}
+{% include elements/anchor.html name="策略" %}
 
 {% assign node_sass_link = site.data.links.by_id['customize-node-sass'] %}
 {% assign sass_cli_link = site.data.links.by_id['customize-sass-cli'] %}
@@ -49,23 +49,23 @@ breadcrumb:
 
 <div class="content">
   <p>
-    To customize Bulma, you will need to:
+    定制 Bulma，您需要：
   </p>
 
   <ul>
     <li>
-      <strong>install</strong> (or download) Bulma
+      <strong>安装</strong>（或者下载）Bulma
     </li>
     <li>
-      have a working <strong>Sass setup</strong>
+      有一个可工作的 <strong>Sass 安装</strong>
     </li>
     <li>
-      create your own <code>.scss</code> or <code>.sass</code> file
+      创建您自己的 <code>.scss</code> 或者 <code>.sass</code> 文件
     </li>
   </ul>
 
   <p>
-    This can be achieved with any of the following:
+    这可以通过以下任何一种方式实现：
   </p>
 
   <ul>
